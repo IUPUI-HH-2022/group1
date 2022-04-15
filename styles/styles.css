@@ -78,6 +78,8 @@ nav li {
 /*new styles added by Gabi , no edits done to nav*/
   body{
     background-color: rgb(160, 160, 160);
+    font-family: 'Playfair Display', serif;
+    
 }
 nav{
     grid-area: nav;
@@ -93,6 +95,9 @@ header{
     background-color: rgb(225, 225, 225);
     border-radius: 10%;
     padding: 5%;
+    }
+    h1{
+        font-family: 'Playfair Display', serif;
     }
 body{
     
