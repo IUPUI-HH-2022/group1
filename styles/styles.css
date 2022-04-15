@@ -22,6 +22,7 @@
 nav {
     grid-area: nav;
     width: auto;
+    
 }
 
 nav ul {
@@ -33,7 +34,8 @@ nav li {
     display: inline;
     margin-right: 40px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: white;
     
 }
 
@@ -75,8 +77,9 @@ nav li {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  /*nav ends here*/
 /*new styles added by Gabi , no edits done to nav*/
-  body{
+body{
     background-color: rgb(160, 160, 160);
     font-family: 'Playfair Display', serif;
     
@@ -98,14 +101,14 @@ header{
     }
     h1{
         font-family: 'Playfair Display', serif;
+        font-weight: bold;
     }
-body{
-    
-    }
+
 footer{
     grid-area: footer;
     }
-}
+
+
   /*FIRST BREAK POINT === tablet */
   @media only screen and (max-width : 900px) {
 
