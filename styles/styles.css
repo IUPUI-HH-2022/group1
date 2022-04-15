@@ -130,11 +130,17 @@ footer{
                 grid-gap: .5em;
                 padding: .5em;
             }
-    main {
+    
+        /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
+        main {
+        }
+        footer {
+        }*/
     }
-    footer {
-    }
-      /*SECOND BREAK POINT === mobile */
+
+
+
+/*SECOND BREAK POINT === mobile */
  @media only screen and (max-width : 600px) {
     .grid-container {
                 display: grid;
@@ -147,8 +153,12 @@ footer{
                 grid-gap: .5em;
                 padding: .5em;
             }
-    main {
+
+        /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
+        main {
+
+        }
+        footer {
+        }
+        */
     }
-    footer {
-    }
-}
