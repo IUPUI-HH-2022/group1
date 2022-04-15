@@ -28,6 +28,7 @@ nav {
 nav ul {
     text-align: right;
     margin: 10px;
+    
 }
 
 nav li {
@@ -35,7 +36,7 @@ nav li {
     margin-right: 40px;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
-    color: white;
+    
     
 }
 
