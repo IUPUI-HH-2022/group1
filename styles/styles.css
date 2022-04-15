@@ -107,8 +107,14 @@ header{
 
 footer{
     grid-area: footer;
-    }
 
+    }
+.footerimgs{
+    max-width: 10%;
+}
+.footerimgs2{
+    max-width: 8%;
+}
 
   /*FIRST BREAK POINT === tablet */
   @media only screen and (max-width : 900px) {
