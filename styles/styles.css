@@ -1,28 +1,30 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-        /* THIS IS THE DEFAULT GRID
-        'header header header header header header'
-        'nav nav main main main aside'
-        'nav nav main main main aside' 
-        'nav nav main main main aside'
-        'footer footer footer footer footer footer';*/
         'nav nav nav nav nav nav'
         'header header header header header header'
         'main main main main main main'
         'main main main main main main'
         'footer footer footer footer footer footer';
-/*grid changed to remove aside as it stops the main content from filling the necessary section*/
+
     grid-gap: .5em;
+    /*
+    PADDING AND WIDTH REMOVED FROM HERE
+    to enable navbar to stick to the top, or grid was applying marging and padding to it - Giulia
     padding: .5em;
-    max-width: 75%; /*width adjusted to 75% from 62em*/
+    width adjusted to 75% from 62em
+    */
     margin: auto;
 }
 
 nav {
     grid-area: nav;
-    width: 100%;
     background-color: rgb(0, 67, 11);
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
     
 }
 
@@ -35,7 +37,9 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 40px;
+    margin-top: 15px;
     font-weight: bold;
+    font-size: 20px;
     font-family: 'Playfair Display', serif;   
 }
 
@@ -49,6 +53,7 @@ nav li {
 #nav a:hover {
     /*hover color changed by Gabi 17/04*/
     background-color: rgb(144, 187, 109);
+    border-radius: 15px;
 }
 
 /* Dropdown */
@@ -85,7 +90,7 @@ nav li {
 body{ /*background color changed slightly lighter Gabi 17/04*/
     background-color: rgb(190, 190, 190);
     font-family: 'Playfair Display', serif;
-    
+    margin: 0;
 }
 
 main {
@@ -93,132 +98,141 @@ main {
     background-color: rgb(225, 225, 225);
     border-radius: 10%;
     padding: 5%;
+    max-width: 75%;
+    margin: auto;
 }
 header{
     grid-area: header;
     background-color: rgb(225, 225, 225);
     border-radius: 10%;
     padding: 5%;
+    max-width: 85%;
+    margin: auto;
     }
-h1{
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        text-decoration: underline solid 1px black;
+
+ h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-decoration: underline solid 1px black;
     }
-    /*collapsable boxes start here -code on how to do this from https://www.w3schools.com/howto/howto_js_collapsible.asp code modified for our site by Gabi*/
     
-    .collapsible {
-        float: left;
-        margin-left: 5%;
-        color: white;
-        cursor: pointer;
-        padding: .3%;
-        width: 35%;
-        text-align: left;
-        padding-left: 5%;
-        background-color: #176914;
-        border-radius: 5%;
-        outline: none;
-        font-family: 'Playfair Display', serif;
-        clear: left;
-      }
-   
-      .active, .collapsible:hover {
-        background-color: rgb(141, 194, 124);
-      }
+/*collapsable boxes start here -code on how to do this from https://www.w3schools.com/howto/howto_js_collapsible.asp code modified for our site by Gabi*/
+    
+.collapsible {
+    float: left;
+    margin-left: 5%;
+    color: white;
+    cursor: pointer;
+    padding: .3%;
+    width: 35%;
+    text-align: left;
+    padding-left: 5%;
+    background-color: #176914;
+    border-radius: 5%;
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    clear: left;
+  }
+
+  .active, .collapsible:hover {
+    background-color: rgb(141, 194, 124);
+  }
+  
+  .content {
+    float: left;
+    clear: both;
+    margin-left: 5%;
+    padding:  18px;
+    display: none;
+    overflow: hidden;
+    background-color: #d2d2d2;
+    border-radius: 10%;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    max-width: 32%;
+    margin-bottom: 1%;
+  }
       
-      .content {
-        float: left;
-        clear: both;
-        margin-left: 5%;
-        padding:  18px;
-        display: none;
-        overflow: hidden;
-        background-color: #d2d2d2;
-        border-radius: 10%;
-        font-size: 15px;
-        font-family: 'Playfair Display', serif;
-        max-width: 32%;
-        margin-bottom: 1%;
-      }
-      
-      .collapsible2 {
-        margin-right: 5%;
-        margin-left: 20%;
-        color: white;
-        cursor: pointer;
-        padding: .3%;
-        width: 35%;
-        text-align: left;
-        padding-left: 5%;
-        background-color: #176914;
-        border-radius: 5%;
-        outline: none;
-        font-family: 'Playfair Display', serif; 
-        display:inline-block;
-        
-      }
-      .active, .collapsible2:hover {
-        background-color: rgb(141, 194, 124);
-      }
-      .content2 {
-        margin-inline-start: 60%;
-        padding:  18px;
-        display: none;
-        overflow: hidden;
-        background-color: #d2d2d2;
-        border-radius: 10%;
-        font-size: 15px;
-        font-family: 'Playfair Display', serif;
-        max-width: 32%;
-        margin-bottom: 1%;
-      }
+.collapsible2 {
+  margin-right: 5%;
+  margin-left: 20%;
+  color: white;
+  cursor: pointer;
+  padding: .3%;
+  width: 35%;
+  text-align: left;
+  padding-left: 5%;
+  background-color: #176914;
+  border-radius: 5%;
+  outline: none;
+  font-family: 'Playfair Display', serif; 
+  display:inline-block;
+  
+}
+.active, .collapsible2:hover {
+  background-color: rgb(141, 194, 124);
+}
+.content2 {
+  margin-inline-start: 60%;
+  padding:  18px;
+  display: none;
+  overflow: hidden;
+  background-color: #d2d2d2;
+  border-radius: 10%;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  max-width: 32%;
+  margin-bottom: 1%;
+}
 
 
-      /*images with spin around inside boxes starts here Gabi*/
-      /*setting size of images*/
-      .smallimg{
-        max-width: 35%;
-        border-radius: 50%;
-        margin-inline-start: 30%;
-    }
-    /*fliping around images starts here - how to do this from https://www.w3schools.com/howto/howto_css_flip_image.asp code edited to suit our needs by Gabi*/
-    .flip-box {
-        background-color: transparent;
-        margin-bottom: 40%;
-        perspective: 1000px;
-      }
-      
-      .flip-box-inner {
-        position: relative;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-      }
-      
-      .flip-box:hover .flip-box-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .flip-box-front, .flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .flip-box-front {
-        background-color: #bbb;
-        color: black;
-      }
-      
-      .flip-box-back {
-        background-color: #555;
-        color: white;
-        transform: rotateY(180deg);
-      }
-      /*end of flip arounds*/
-      /*end of boxes styling*/
+  /*images with spin around inside boxes starts here Gabi*/
+  /*setting size of images*/
+  .smallimg{
+    max-width: 35%;
+    border-radius: 50%;
+    margin-inline-start: 30%;
+}
+
+
+/*fliping around images starts here - how to do this from https://www.w3schools.com/howto/howto_css_flip_image.asp code edited to suit our needs by Gabi*/
+.flip-box {
+  background-color: transparent;
+  margin-bottom: 40%;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*end of flip arounds*/
+/*end of boxes styling*/
 footer{
     grid-area: footer;
 
@@ -230,95 +244,93 @@ footer{
     max-width: 8%;
 }
 
-  /*FIRST BREAK POINT === tablet */
-  @media only screen and (max-width : 900px) {
+/*FIRST BREAK POINT === tablet */
+@media only screen and (max-width : 900px) {
 
-    .grid-container {
-                display: grid;
-                grid-template-areas:
-            'nav nav nav nav nav nav'
-            'header header header header header header'
-            'main main main main main main'
-            'main main main main main main'
-            'footer footer footer footer footer footer';
-                grid-gap: .5em;
-                padding: .5em;
-            }
-    
-        /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
-        main {
-        }
-        footer {
-        }*/
-    }
+  .grid-container {
+              display: grid;
+              grid-template-areas:
+          'nav nav nav nav nav nav'
+          'header header header header header header'
+          'main main main main main main'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+              grid-gap: .5em;
+          }
+  
+      /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
+      main {
+      }
+      footer {
+      }*/
+  }
 
 
 
 /*SECOND BREAK POINT === mobile */
  @media only screen and (max-width : 600px) {
     .grid-container {
-                display: grid;
-                grid-template-areas:
-            'nav nav nav nav nav nav'
-            'header header header header header header'
-            'main main main main main main'
-            'main main main main main main'
-            'footer footer footer footer footer footer';
-                grid-gap: .5em;
-                padding: .5em;
-            }
-            /*changing boxes to show one by one on mobile view*/
-            .collapsible {
-                float:none;
-                margin-left: 5%;
-                margin-right: 5%;
-                padding: .3%;
-                width: 90%;
-                text-align: center;
-                padding-left: 0%;
-                border-radius: .5%;
-                vertical-align: middle;
-              }
-           
-              .active, .collapsible:hover {
-                background-color: rgb(141, 194, 124);
-              }
-              
-              .content {
-                float: none;
-                clear: both;
-                margin-left: 5%;
-                padding:  5%;
-                border-radius: 10%;
-                font-size: 15px;
-                font-family: 'Playfair Display', serif;
-                max-width: 80%;
-              }
-              
-              .collapsible2 {
-                    float:none;
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    padding: .3%;
-                    width: 90%;
-                    text-align: center;
-                    padding-left: 0%;
-                    border-radius: .5%;
-                    vertical-align: middle;
-                  }
-                  .active, .collapsible2:hover {
-                    background-color: rgb(141, 194, 124);
-                  } 
-              .content2 {
-                float: none;
-                clear: both;
-                margin-left: 5%;
-                padding:  5%;
-                border-radius: 10%;
-                font-size: 15px;
-                font-family: 'Playfair Display', serif;
-                max-width: 80%;
-              }
+        display: grid;
+        grid-template-areas:
+    'nav nav nav nav nav nav'
+    'header header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+        grid-gap: .5em;
+    }
+    /*changing boxes to show one by one on mobile view*/
+    .collapsible {
+        float:none;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: .3%;
+        width: 90%;
+        text-align: center;
+        padding-left: 0%;
+        border-radius: .5%;
+        vertical-align: middle;
+      }
+        
+      .active, .collapsible:hover {
+        background-color: rgb(141, 194, 124);
+      }
+          
+      .content {
+        float: none;
+        clear: both;
+        margin-left: 5%;
+        padding:  5%;
+        border-radius: 10%;
+        font-size: 15px;
+        font-family: 'Playfair Display', serif;
+        max-width: 80%;
+      }
+          
+      .collapsible2 {
+            float:none;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: .3%;
+            width: 90%;
+            text-align: center;
+            padding-left: 0%;
+            border-radius: .5%;
+            vertical-align: middle;
+          }
+          .active, .collapsible2:hover {
+            background-color: rgb(141, 194, 124);
+          } 
+      .content2 {
+        float: none;
+        clear: both;
+        margin-left: 5%;
+        padding:  5%;
+        border-radius: 10%;
+        font-size: 15px;
+        font-family: 'Playfair Display', serif;
+        max-width: 80%;
+      }
         /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
         main {
 
