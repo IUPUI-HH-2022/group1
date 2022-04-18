@@ -41,7 +41,7 @@ nav li {
     margin-top: 15px;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Playfair Display', serif;   
+    /*font-family: 'Playfair Display', serif;  */ 
 }
 
 #nav a {
@@ -115,7 +115,7 @@ header{
 
  h1{
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration: underline solid 1px black;
     }
 
