@@ -29,3 +29,18 @@ for (i = 0; i < coll2.length; i++) {
     }
   });
 }
+
+var coll3 = document.getElementsByClassName("collapsibleflip");
+var i;
+
+for (i = 0; i < coll3.length; i++) {
+  coll3[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

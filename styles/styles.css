@@ -98,8 +98,12 @@ main {
     background-color: rgb(225, 225, 225);
     border-radius: 10%;
     padding: 5%;
+<<<<<<< HEAD
     max-width: 75%;
     margin: auto;
+=======
+    padding-bottom: 50%;
+>>>>>>> 20982cb4af8bd4ae1a7799b8aafbe7151d5b3009
 }
 header{
     grid-area: header;
@@ -186,6 +190,7 @@ header{
 }
 
 
+<<<<<<< HEAD
   /*images with spin around inside boxes starts here Gabi*/
   /*setting size of images*/
   .smallimg{
@@ -233,6 +238,125 @@ header{
 
 /*end of flip arounds*/
 /*end of boxes styling*/
+=======
+      /*images with spin around inside boxes starts here Gabi*/
+      /*setting size of images*/
+      .smallimg{
+        max-width: 35%;
+        border-radius: 50%;
+        margin-inline-start: 30%;
+    }
+    /*fliping around images starts here - how to do this from https://www.w3schools.com/howto/howto_css_flip_image.asp code edited to suit our needs by Gabi*/
+    .flip-box {
+        background-color: transparent;
+        margin-bottom: 40%;
+        perspective: 1000px;
+      }
+      
+      .flip-box-inner {
+        position: relative;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-box-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-box-back {
+        background-color: #555;
+        color: white;
+        transform: rotateY(180deg);
+      }
+           /*test code for flip drop down box*/
+           .fliptest1{
+            max-width: 40%;
+        }
+        .collapsibleflip{
+              float: left;
+              margin-left: 5%;
+              color: white;
+              cursor: pointer;
+              width:35%;
+              text-align: left;
+              padding: 0%;
+              background-color: #176914;
+              outline: none;
+              font-family: 'Playfair Display', serif;
+              clear: left;
+            }
+         
+            .active, .collapsible:hover {
+              background-color: rgb(141, 194, 124);
+            }
+      .fliph2{
+          float: right;
+          padding-right: 5%;
+      }
+      .textbox{
+          clear: both;
+      }
+      /*next trial boxes just flip around with text on the back*/
+      .fliptestimg2{
+          max-width: 100%;
+      }
+      .flip-box1 {
+          background-color: transparent;
+          max-width: 35%;
+          perspective: 1000px;
+         
+        }
+        
+        .flip-box-inner1 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+        }
+        
+        .flip-box1:hover .flip-box-inner1 {
+          transform: rotateY(180deg);
+        }
+        
+        .flip-box-front1, .flip-box-back1 {
+          position: absolute;
+         /* width: 100%;
+          height: 100%;*/
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .flip-box-front1 {
+          background-color: #bbb;
+          color: black;
+        }
+        
+        .flip-box-back1 {
+          background-color: rgb(180, 180, 180);
+          color: rgb(0, 0, 0);
+          transform: rotateY(180deg);
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+      
+      /*end of flip arounds*/
+      /*end of boxes styling*/
+>>>>>>> 20982cb4af8bd4ae1a7799b8aafbe7151d5b3009
 footer{
     grid-area: footer;
 
