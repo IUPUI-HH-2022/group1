@@ -97,9 +97,9 @@ body{ /*background color changed slightly lighter Gabi 17/04*/
 main {
     grid-area: main;
     background-color: rgb(225, 225, 225);
-    border-radius: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2%;
     max-width: 60%;
     margin-top: 10px;
@@ -111,9 +111,9 @@ main {
 header{
     grid-area: header;
     background-color: rgb(225, 225, 225);
-    border-radius: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 5%;
     margin: auto;
