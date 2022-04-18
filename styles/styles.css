@@ -21,6 +21,7 @@
 
 nav {
     grid-area: nav;
+    width: 100%;
     background-color: rgb(0, 67, 11);
     
 }
