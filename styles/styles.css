@@ -98,12 +98,9 @@ main {
     background-color: rgb(225, 225, 225);
     border-radius: 10%;
     padding: 5%;
-<<<<<<< HEAD
     max-width: 75%;
     margin: auto;
-=======
     padding-bottom: 50%;
->>>>>>> 20982cb4af8bd4ae1a7799b8aafbe7151d5b3009
 }
 header{
     grid-area: header;
@@ -189,8 +186,7 @@ header{
   margin-bottom: 1%;
 }
 
-
-<<<<<<< HEAD
+/* git merge FIX THESE  rows 190-356*/
   /*images with spin around inside boxes starts here Gabi*/
   /*setting size of images*/
   .smallimg{
@@ -238,7 +234,6 @@ header{
 
 /*end of flip arounds*/
 /*end of boxes styling*/
-=======
       /*images with spin around inside boxes starts here Gabi*/
       /*setting size of images*/
       .smallimg{
@@ -356,7 +351,6 @@ header{
       
       /*end of flip arounds*/
       /*end of boxes styling*/
->>>>>>> 20982cb4af8bd4ae1a7799b8aafbe7151d5b3009
 footer{
     grid-area: footer;
 
