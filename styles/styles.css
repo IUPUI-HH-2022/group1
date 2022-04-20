@@ -22,7 +22,9 @@ nav {
     grid-area: nav;
     background-color: rgb(0, 67, 11);
     display: block;
-    position: sticky;
+    /*position: sticky;*/ 
+    /*when sticky or fixed is on the boxes and the nav have issues with overlapping, 
+    boxes must have absolute position or else they don't flip over correctly- we need to resolve this Gabi 20/04*/
     top: 0;
     width: 100%;
     height: 60px;
@@ -89,7 +91,7 @@ nav li {
   /*nav ends here*/
 
 body{ /*background color changed slightly lighter Gabi 17/04*/
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(197, 198, 197);
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
@@ -131,97 +133,37 @@ header{
     width: 100%;
     height: auto; /*can change to adapt to content later*/
   }
-    
-/*collapsable boxes start here -code on how to do this from https://www.w3schools.com/howto/howto_js_collapsible.asp 
-code modified for our site by Gabi*/
-    
-.collapsible {
-    float: left;
-    margin-left: 5%;
-    color: white;
-    cursor: pointer;
-    padding: .3%;
-    width: 35%;
-    text-align: left;
-    padding-left: 5%;
-    background-color: #176914;
-    border-radius: 5%;
-    outline: none;
-    font-family: 'Playfair Display', serif;
-    clear: left;
-  }
 
-  .active, .collapsible:hover {
-    background-color: rgb(141, 194, 124);
-  }
-  
-  .content {
-    float: left;
-    clear: both;
-    margin-left: 5%;
-    padding:  18px;
-    display: none;
-    overflow: hidden;
-    background-color: #d2d2d2;
-    border-radius: 10%;
-    font-size: 15px;
-    font-family: 'Playfair Display', serif;
-    max-width: 32%;
-    margin-bottom: 1%;
-  }
-      
-.collapsible2 {
-  margin-right: 5%;
-  margin-left: 20%;
-  color: white;
-  cursor: pointer;
-  padding: .3%;
-  width: 35%;
-  text-align: left;
-  padding-left: 5%;
-  background-color: #176914;
-  border-radius: 5%;
-  outline: none;
-  font-family: 'Playfair Display', serif; 
-  display:inline-block;
-  
-}
-.active, .collapsible2:hover {
-  background-color: rgb(141, 194, 124);
-}
-.content2 {
-  margin-inline-start: 60%;
-  padding:  18px;
-  display: none;
-  overflow: hidden;
-  background-color: #d2d2d2;
-  border-radius: 10%;
-  font-size: 15px;
-  font-family: 'Playfair Display', serif;
-  max-width: 32%;
-  margin-bottom: 1%;
+  footer{
+    grid-area: footer;
+
+    }
+.footerimgs{
+    max-width: 10%;
 }
 
-/* git merge FIX THESE  rows 190-356*/
-  /*images with spin around inside boxes starts here Gabi*/
-  /*setting size of images*/
-  .smallimg{
-    max-width: 35%;
-    border-radius: 50%;
-    margin-inline-start: 30%;
+.footerimgs2{
+    max-width: 8%;
 }
-
-
-/*fliping around images starts here - how to do this from https://www.w3schools.com/howto/howto_css_flip_image.asp 
-code edited to suit our needs by Gabi*/
+ 
+/*flip around boxes*/
 .flip-box {
   background-color: transparent;
-  margin-bottom: 40%;
+  max-width: 35%;
   perspective: 1000px;
+  margin-inline-start: 10%;
+  padding-top: 4%;
 }
 
+.flipImageFront{
+  max-width: 100%;
+  border-radius: 10%;
+  }        
+        
 .flip-box-inner {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -231,115 +173,41 @@ code edited to suit our needs by Gabi*/
 }
 
 .flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position:absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
+        
 .flip-box-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
 .flip-box-back {
-  background-color: #555;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-
-/*test code for flip drop down box*/
-  .fliptest1{
-    max-width: 40%;
-    }
-  .collapsibleflip{
-    float: left;
-    margin-left: 5%;
-    color: white;
-    cursor: pointer;
-    width:35%;
-    text-align: left;
-    padding: 0%;
-    background-color: #176914;
-    outline: none;
-    font-family: 'Playfair Display', serif;
-    clear: left;
-    }
-         
-    .active, .collapsible:hover {
-      background-color: rgb(141, 194, 124);
-            }
-    .fliph2{
-      float: right;
-      padding-right: 5%;
-      }
-      .textbox{
-          clear: both;
-      }
-      /*next trial boxes just flip around with text on the back*/
-      .fliptestimg2{
-          max-width: 100%;
-          border-radius: 10%;
-      }
-      .flip-box1 {
-          background-color: transparent;
-          max-width: 35%;
-          perspective: 1000px;}
-         
-          .active, .collapsible:hover {
-            background-color: rgb(141, 194, 124);
-          }
-
-        
-.flip-box-inner1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box1:hover .flip-box-inner1 {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front1, .flip-box-back1 {
-  position: absolute;
-  /* width: 100%;
-  height: 100%;*/
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-        
-.flip-box-front1 {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-box-back1 {
   background-color: rgb(180, 180, 180);
   color: rgb(0, 0, 0);
   transform: rotateY(180deg);
   padding-left: 5%;
   padding-right: 5%;
+  border-radius: 10%;
 }
 
+/*second flip around box on right of page*/
+.flip-box2 {
+  background-color: transparent;
+  width: 35%;
+  perspective: 1000px;
+  margin-inline-start: 55%;
+  padding-top: 0%;
+}
 
+.flip-box2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
 /*end of flip arounds*/
 /*end of boxes styling*/
-footer{
-    grid-area: footer;
 
-    }
-.footerimgs{
-    max-width: 10%;
-}
-.footerimgs2{
-    max-width: 8%;
-}
+
 
 /*FIRST BREAK POINT === tablet */
 @media only screen and (max-width : 900px) {
