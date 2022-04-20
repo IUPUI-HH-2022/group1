@@ -147,13 +147,6 @@ header{
 }
  
 /*flip around boxes*/
-.flip-box {
-  background-color: transparent;
-  max-width: 35%;
-  perspective: 1000px;
-  margin-inline-start: 10%;
-  padding-top: 4%;
-}
 
 .flipImageFront{
   max-width: 100%;
@@ -166,10 +159,6 @@ header{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
 }
 
 .flip-box-front, .flip-box-back {
@@ -189,19 +178,68 @@ header{
   transform: rotateY(180deg);
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
-/*second flip around box on right of page*/
+/*areas of all flipboxes that require individual styling*/
+.flip-box {
+  background-color: transparent;
+  max-width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 13%;
+  padding-top: 5%;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  padding-bottom: 100%;
+}
+
 .flip-box2 {
   background-color: transparent;
-  width: 35%;
+  width: 30%;
   perspective: 1000px;
-  margin-inline-start: 55%;
-  padding-top: 0%;
+  margin-inline-start: 60%;
+  padding-bottom: 32%;
 }
 
 .flip-box2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  padding-bottom: 90%;
+}
+
+.flip-box3 {
+  background-color: transparent;
+  width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 13%;
+}
+
+.flip-box3:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  padding-bottom: 75%;
+}
+
+.flip-box4 {
+    background-color: transparent;
+    width: 30%;
+    perspective: 1000px;
+    margin-inline-start: 60%;
+    padding-bottom: 32%;
+}
+
+.flip-box4:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box5 {
+  background-color: transparent;
+  max-width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 13%;
+}
+
+.flip-box5:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 /*end of flip arounds*/
