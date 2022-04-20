@@ -98,7 +98,7 @@ body{ /*background color changed slightly lighter Gabi 17/04*/
 
 main {
     grid-area: main;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(241, 241, 241);
     border-radius: 25px;
     padding-left: 5%;
     padding-right: 5%;
@@ -107,7 +107,7 @@ main {
     margin-top: 10px;
     margin: auto;
     padding-bottom: 50%;
-    max-width: 55%;
+    width: 55%;
 }
 
 header{
@@ -147,7 +147,9 @@ header{
 }
  
 /*flip around boxes*/
-
+.spinArrow{
+  max-width: 10%;
+}
 .flipImageFront{
   max-width: 100%;
   border-radius: 10%;
@@ -200,7 +202,7 @@ header{
   width: 30%;
   perspective: 1000px;
   margin-inline-start: 60%;
-  padding-bottom: 32%;
+  padding-bottom: 33%;
 }
 
 .flip-box2:hover .flip-box-inner {
@@ -225,7 +227,7 @@ header{
     width: 30%;
     perspective: 1000px;
     margin-inline-start: 60%;
-    padding-bottom: 32%;
+    padding-bottom: 33%;
 }
 
 .flip-box4:hover .flip-box-inner {
