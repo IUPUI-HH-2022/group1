@@ -95,72 +95,90 @@ body{ /*background color changed slightly lighter Gabi 17/04*/
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
-/*media view to only enable hover on desktop view*/
-@media only screen and (min-width : 1200px) {
 main {
-    grid-area: main;
-    background-color: rgb(241, 241, 241);
-    border-radius: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    max-width: 60%;
-    margin-top: 10px;
-    margin: auto;
-    padding-bottom: 50%;
-    width: 80%;
+  grid-area: main;
+  background-color: rgb(241, 241, 241);
+  border-radius: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  margin-top: 10px;
+  margin: auto;
+  padding-bottom: 50%;
+  width: 70%;
 }
 
 header{
-    grid-area: header;
-    background-color: rgb(225, 225, 225);
-    border-radius: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    margin: auto;
-    max-width: 55%;
-    }
-
- h1{
-    font-family: 'EB Garamond', serif;
-    text-decoration: underline solid 1px black;
-    }
-
-  footer {
-    background-color: rgb(144, 187, 109);
-    bottom: 0;
-    width: 100%;
-    height: auto; /*can change to adapt to content later*/
+  grid-area: header;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin: auto;
+  max-width: 70%;
   }
 
-  footer{
-    grid-area: footer;
+h1{
+  font-family: 'EB Garamond', serif;
+  text-decoration: underline solid 1px black;
+  }
+/*all footer items here*/
+footer {
+  background-color: rgb(144, 187, 109);
+  bottom: 0;
+  width: 100%;
+  height: auto; /*can change to adapt to content later*/
+}
 
-    }
+footer{
+  grid-area: footer;
+
+  }
 .footerimgs{
-    max-width: 10%;
+  max-width: 10%;
 }
 
 .footerimgs2{
-    max-width: 8%;
+  max-width: 8%;
 }
- 
+/*end of footer*/
+
+/*media view used to only enable hover on desktop view -please remember that any styling you do here 
+MUST be done to the next breakpoint as well or it will not show on smaller viewports. this is unfortunately how it needs to be done
+to have boxes that spin on desktop view but can be clicked on a smaller viewport*/
+@media only screen and (min-width : 1200px) {
+  /*main body styling*/
+
 /*flip around boxes*/
-/*spin arrow icon also trial button*/
+/*spin arrow /expand icon + switching paragraphs based on viewport*/
+/*spin arrow icon*/
 .spinArrow{
   max-width: 10%;
-
+  position: static;
 }
+/*paragraph for smaller viewports telling user to click to read*/
 .clickP{
   display: none;
 }
+/*expand icon*/
+.expand{
+  display: none;
+}
+/*collapsible is the button to expand*/
+.collapsible{
+  border:0ch;
+}
+/*end of icon + buttons*/
+
+/*flip image styling applicable to all boxes*/
+/*this is the image on the front*/
 .flipImageFront{
   max-width: 100%;
   border-radius: 10%;
   }        
-        
+ /*this is the front and back both*/       
 .flip-box-inner {
   width: 100%;
   height: 100%;
@@ -168,72 +186,78 @@ header{
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
+/*this is the front and back*/
 .flip-box-front, .flip-box-back {
   position:absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-        
+/*this is only the front*/        
 .flip-box-front {
   background-color: transparent;
   color: black;
 }
-
+/*this is only the back*/ 
 .flip-box-back {
   background-color: rgb(180, 180, 180);
   color: rgb(0, 0, 0);
   transform: rotateY(180deg);
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
   border-radius: 15px;
+  margin-top: 0%;
+  
 }
 
-/*areas of all flipboxes that require individual styling*/
+/*areas of flipboxes that require individual styling due to absolute positioning - absolute position is required
+otherwise the front and back cant overlap and spin to reveal one another, but rather take individual space*/
+/*flip box one on left of site*/
 .flip-box {
   background-color: transparent;
   max-width: 30%;
   perspective: 1000px;
   margin-inline-start: 13%;
-  padding-top: 5%;
+  margin-top: 2%;
 }
-
+/*spin code*/
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 150%;
+  padding-bottom: 90%;
 }
 
 .flip-box2 {
   background-color: transparent;
-  width: 30%;
+  max-width: 30%;
   perspective: 1000px;
   margin-inline-start: 60%;
-  padding-bottom: 33%;
+  padding-bottom: 30%;
 }
 
 .flip-box2:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 120%;
+  padding-bottom: 80%;
 }
 
 .flip-box3 {
   background-color: transparent;
-  width: 30%;
+  max-width: 30%;
   perspective: 1000px;
   margin-inline-start: 13%;
+  padding-top: 2%;
 }
 
 .flip-box3:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 120%;
+  padding-bottom: 65%;
 }
 
 .flip-box4 {
     background-color: transparent;
-    width: 30%;
+    max-width: 30%;
     perspective: 1000px;
     margin-inline-start: 60%;
-    padding-bottom: 33%;
+    padding-bottom: 30%;
 }
 
 .flip-box4:hover .flip-box-inner {
@@ -254,6 +278,9 @@ header{
 /*end of flip arounds*/
 /*end of boxes styling*/
 
+/*end of desk top view*/
+
+
 /*FIRST BREAK POINT === tablet */
 @media only screen and (max-width : 1200px) {
 
@@ -267,57 +294,10 @@ header{
     'footer footer footer footer footer footer';
         grid-gap: .5em;
     }
-    main {
-      grid-area: main;
-      background-color: rgb(241, 241, 241);
-      border-radius: 25px;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 2%;
-      max-width: 80%;
-      margin-top: 10px;
-      margin: auto;
-      padding-bottom: 50%;
-      width: 90%;
-  }
-  
-  header{
-      grid-area: header;
-      background-color: rgb(225, 225, 225);
-      border-radius: 15px;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 2%;
-      padding-bottom: 5%;
-      margin: auto;
-      max-width: 80%;
-      }
-  
-   h1{
-      font-family: 'EB Garamond', serif;
-      text-decoration: underline solid 1px black;
-      }
-  
-    footer {
-      background-color: rgb(144, 187, 109);
-      bottom: 0;
-      width: 100%;
-      height: auto; /*can change to adapt to content later*/
-    }
-  
-    footer{
-      grid-area: footer;
-  
-      }
-  .footerimgs{
-      max-width: 10%;
-  }
-  
-  .footerimgs2{
-      max-width: 8%;
-  }
-   
-  /*flip around boxes*/
+    
+  /*flip around boxes all code for boxes must be here regardless of if it is in the above section
+  above boxes section is in a media view and will not be displayed here*/
+
   /*arrow and expand icons and button start*/
   .spinArrow{
     max-width: 10%;
@@ -331,10 +311,12 @@ header{
     border: none;
     cursor: pointer;
   }
+  /*paragraph telling user to hover for bios*/
   .hoverP{
     display: none;
   }
   /*arrow expand and button end*/
+
   .flipImageFront{
     max-width: 100%;
     border-radius: 10%;
@@ -357,7 +339,7 @@ header{
   }
   
   .flip-box-back {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(144, 187, 109);
     color: rgb(0, 0, 0);
     padding-left: 5%;
     padding-right: 5%;
@@ -365,7 +347,7 @@ header{
     display: none;
   }
   
-/*areas of all flipboxes that require individual styling*/
+/*areas of flipboxes that require individual styling*/
 .flip-box {
   max-width: 30%;
   perspective: 1000px;
@@ -406,21 +388,21 @@ header{
   margin-inline-start: 10%;
   padding-top: 2%;
   clear: both;
+  margin-bottom: 5%;
 }
 
 /*end of flip arounds*/
 
       /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
-      main {
-      }
+      
       footer {
       }*/
   }
 
-
+/*end of tablet view*/
 
 /*SECOND BREAK POINT === mobile */
- @media only screen and (max-width : 600px) {
+ @media only screen and (max-width : 650px) {
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -431,62 +413,67 @@ header{
     'footer footer footer footer footer footer';
         grid-gap: .5em;
     }
-    /*changing boxes to show one by one on mobile view*/
-    .collapsible {
-        float:none;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: .3%;
-        width: 90%;
-        text-align: center;
-        padding-left: 0%;
-        border-radius: .5%;
-        vertical-align: middle;
-      }
+   
         
-      .active, .collapsible:hover {
-        background-color: rgb(141, 194, 124);
-      }
-          
-      .content {
-        float: none;
-        clear: both;
-        margin-left: 5%;
-        padding:  5%;
-        border-radius: 10%;
-        font-size: 15px;
-        font-family: 'Playfair Display', serif;
-        max-width: 80%;
-      }
-          
-      .collapsible2 {
-            float:none;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding: .3%;
-            width: 90%;
-            text-align: center;
-            padding-left: 0%;
-            border-radius: .5%;
-            vertical-align: middle;
-          }
-          .active, .collapsible2:hover {
-            background-color: rgb(141, 194, 124);
-          } 
-      .content2 {
-        float: none;
-        clear: both;
-        margin-left: 5%;
-        padding:  5%;
-        border-radius: 10%;
-        font-size: 15px;
-        font-family: 'Playfair Display', serif;
-        max-width: 80%;
-      }
-        /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
-        main {
+  /*flip around boxes*/
+  .flipImageFront{
+    max-width: 50%;
+    border-radius: 10%;
+    }          
+        
+  
+  .flip-box-back {
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    border-radius: 15px;
+    display: none;
+    max-width: 100%;
+  }
+  
+/*areas of all flipboxes that require individual styling*/
+.flip-box {
+  max-width: 85%;
+  padding-bottom: 5%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+  float: none;
+}
 
-        }
+.flip-box2 {
+    width: 85%;
+    padding-bottom: 5%;
+    perspective: 1000px;
+    margin-inline-start: 10%;
+}
+
+.flip-box3 {
+  width: 85%;
+  padding-bottom: 5%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+  float: none;
+}
+
+.flip-box4 {
+    width: 85%;
+    padding-bottom: 5%;
+    perspective: 1000px;
+    margin-inline-start: 10%;
+}
+
+.flip-box5 {
+  max-width: 85%;
+  padding-bottom: 5%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+}
+
+/*end of flip arounds*/
+
+        /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
         footer {
         }
         */
