@@ -95,7 +95,8 @@ body{ /*background color changed slightly lighter Gabi 17/04*/
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
-
+/*media view to only enable hover on desktop view*/
+@media only screen and (min-width : 1200px) {
 main {
     grid-area: main;
     background-color: rgb(241, 241, 241);
@@ -107,7 +108,7 @@ main {
     margin-top: 10px;
     margin: auto;
     padding-bottom: 50%;
-    width: 55%;
+    width: 80%;
 }
 
 header{
@@ -147,8 +148,13 @@ header{
 }
  
 /*flip around boxes*/
+/*spin arrow icon also trial button*/
 .spinArrow{
   max-width: 10%;
+
+}
+.clickP{
+  display: none;
 }
 .flipImageFront{
   max-width: 100%;
@@ -194,7 +200,7 @@ header{
 
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 100%;
+  padding-bottom: 150%;
 }
 
 .flip-box2 {
@@ -207,7 +213,7 @@ header{
 
 .flip-box2:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 90%;
+  padding-bottom: 120%;
 }
 
 .flip-box3 {
@@ -219,7 +225,7 @@ header{
 
 .flip-box3:hover .flip-box-inner {
   transform: rotateY(180deg);
-  padding-bottom: 75%;
+  padding-bottom: 120%;
 }
 
 .flip-box4 {
@@ -244,13 +250,12 @@ header{
 .flip-box5:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
+}
 /*end of flip arounds*/
 /*end of boxes styling*/
 
-
-
 /*FIRST BREAK POINT === tablet */
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 1200px) {
 
   .grid-container {
         display: grid;
@@ -262,7 +267,149 @@ header{
     'footer footer footer footer footer footer';
         grid-gap: .5em;
     }
+    main {
+      grid-area: main;
+      background-color: rgb(241, 241, 241);
+      border-radius: 25px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      max-width: 80%;
+      margin-top: 10px;
+      margin: auto;
+      padding-bottom: 50%;
+      width: 90%;
+  }
   
+  header{
+      grid-area: header;
+      background-color: rgb(225, 225, 225);
+      border-radius: 15px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      margin: auto;
+      max-width: 80%;
+      }
+  
+   h1{
+      font-family: 'EB Garamond', serif;
+      text-decoration: underline solid 1px black;
+      }
+  
+    footer {
+      background-color: rgb(144, 187, 109);
+      bottom: 0;
+      width: 100%;
+      height: auto; /*can change to adapt to content later*/
+    }
+  
+    footer{
+      grid-area: footer;
+  
+      }
+  .footerimgs{
+      max-width: 10%;
+  }
+  
+  .footerimgs2{
+      max-width: 8%;
+  }
+   
+  /*flip around boxes*/
+  /*arrow and expand icons and button start*/
+  .spinArrow{
+    max-width: 10%;
+    display: none;
+  }
+  .expand{
+    max-width: 12%;
+  }
+  .collapsible{
+    background-color: rgb(241, 241, 241);
+    border: none;
+    cursor: pointer;
+  }
+  .hoverP{
+    display: none;
+  }
+  /*arrow expand and button end*/
+  .flipImageFront{
+    max-width: 100%;
+    border-radius: 10%;
+    
+    }          
+  .flip-box-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position:relative;
+  }
+          
+  .flip-box-front {
+    background-color: transparent;
+    color: black;
+    display: block;
+  }
+  
+  .flip-box-back {
+    background-color: rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 15px;
+    display: none;
+  }
+  
+/*areas of all flipboxes that require individual styling*/
+.flip-box {
+  max-width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+  float: left;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 60%;
+  
+}
+
+.flip-box3 {
+  background-color: transparent;
+  width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+  float: left;
+  clear: both;
+  padding-top: 2%;
+}
+
+.flip-box4 {
+    background-color: transparent;
+    width: 30%;
+    perspective: 1000px;
+    margin-inline-start: 60%;
+    padding-top: 2%;
+}
+
+.flip-box5 {
+  background-color: transparent;
+  max-width: 30%;
+  perspective: 1000px;
+  margin-inline-start: 10%;
+  padding-top: 2%;
+  clear: both;
+}
+
+/*end of flip arounds*/
+
       /*  TEMPORARELY COMMENTED OUT TO AVOID ERROR TRIGGERING
       main {
       }
