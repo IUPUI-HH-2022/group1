@@ -1,56 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Placeholder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="styles/placeholder.css">
+    <meta name="author" content="Group 1- Teryn Morgan, Giulia Libe, Gabrielle Baker, Christina Friesen, David Fiora">
+    <meta name="description" content="About Us">
+    <meta name="keywords" content="iupui, hh, about us,index">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us</title>
+    <!--link to styles-->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="./styles/flipBoxStyle.css" rel="stylesheet" type="text/css">
+    
+    <!--font linked for body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--second font for headers-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="grid-container"><!-- BEGIN GRID CONTAINER  -->
-        <header>
-            <h1>Header Goes Here</h1>
-        </header>
-
-        <nav><h2>Menu Goes Here</h2>
-            <ul>
-                <li>Home</li>
-                <li>Catiline</li>
-                <li>Deiotarus</li>
-                <li>Murena</li>
-                <li>Caelius</li>
-                <li>Pompey</li>
-                <li>House</li>
-                <li>Provinces</li>
-                <li>Philippic</li>
+    <div class="grid-container">
+        <nav>
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Cyberbullying</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">Intersectionality</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a class="dropMenuItem" href="#">Accessibility</a></li>
+                                <li><a class="dropMenuItem" href="#">Women</a></li>
+                                <li><a class="dropMenuItem" href="#">People of color</a></li>
+                                <li><a class="dropMenuItem" href="#">LGBTQIA+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
 
-        <main>
-            <h2>Main Goes Here</h2>Cicero has been traditionally considered the master of Latin prose, with Quintilian
-            declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
-            Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
-            complicated thoughts with clarity.
-			
+        <header>
+            <h1>About Us</h1>
+            <p>
+            This website represents an international collaboration between students from Haaga-Helia University of Applied Sciences (HH) 
+            in Finland and Indiana University—Purdue University Indianapolis (IUPUI) in the U.S. 
+            Coming from multiple countries and states, our group members bring to this project diverse experiences and insights, 
+            which strengthens and enriches our work. 
+            Under the supervision of Dr. William Helling (IUPUI—Information Structures for the Web) and Kaspar Valtakari 
+            (HH—Orientation to Digital Services), we created this website as an informational resource regarding the broad spectrum of 
+            accessibility and representation issues found in the international video gaming industry. 
+            By shedding light on the issues and providing relevant resources, 
+            we hope this site will be helpful for long-time gamers and gaming novices alike! 
+            </p>
+            
+        </header>
+        <main> 
+          
+        <h1>Meet the Team</h1>
+        <!--we can decide on this later 20/04 Gabi-->
+        <p class="hoverP">
+            Hover over our images to read more about us
+        </p>
+
+        <p class="clickP">
+            Click the expand icon to read more about us
+        </p>
+         <!--hover flip boxes 20/04 Gabi-->       
+        
+        <div  class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class="flipImageFront" src="images/christina.jpg" alt="Christina photo"  >
+                    <img class="spinArrow" src="images/spinArrow.png" alt="Turn arrow symbol"> 
+                </div>
+                <button type="button" class="collapsible">
+                    <img class="expand" src="images/expand.png" alt="Expand symbol">
+                </button>
+                <div class="flip-box-back">
+                    <h2> Christina Friesen</h2>
+                    <p>
+                        Hello, my name is Christina and I’m from Portland, Oregon, USA. Formerly a pharmaceutical clinical researcher for 18+ years, 
+                        I’m currently a university archives coordinator and working toward my Master of Library and Information Science at 
+                        Indiana University—Purdue University Indianapolis, specializing in archives management. Completely new to both programming languages and 
+                        video gaming, I’ve been enjoying learning about both topics during this course and I’m excited to share what I’ve learned so far.
+                    </p>
+                </div>
+            </div>
+        </div>
+                        
+        <div class="flip-box2">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class="flipImageFront" src="images/giulia.jpg" alt="Giulia photo"  >
+                    <img class="spinArrow" src="images/spinArrow.png" alt="Turn arrow symbol">
+                </div>
+                <button type="button" class="collapsible">
+                    <img class="expand" src="images/expand.png" alt="Expand symbol">
+                    </button>
+                <div class="flip-box-back">
+                    <h2> Giulia Libe</h2>
+                    <p>
+                        Hi, my name is Giulia (or Julia if you like), a Business IT fresher from Haaga-Helia University of Applied Sciences. 
+                        I am originally from Italy but moved to Finland in 2018 and been living here ever since. I earned my bachelor’s degree in 
+                        foreign languages, linguistics and literatures and I worked many years in customer service but recently discovered my interest in 
+                        programming and service design. Now I am nurturing this passion and making it my own career. I am a coding and food enthusiast; 
+                        I love video games and nature.
+                    </p>
+                </div>
+            </div>
+        </div>
+                       
+                        
+        <div class="flip-box3">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class="flipImageFront" src="images/morgan.jpg" alt="Teryn photo"  >
+                    <img class="spinArrow" src="images/spinArrow.png" alt="Turn arrow symbol">
+                </div>
+                <button type="button" class="collapsible">
+                    <img class="expand" src="images/expand.png" alt="Expand symbol">
+                    </button>
+                <div class="flip-box-back">
+                    <h2> Teryn Morgan</h2>
+                    <p>
+                    Hi, my name is Teryn Morgan and I’m from North Carolina attending Indiana University—Purdue University Indianapolis to study 
+                    Biomedical Informatics with a minor in Anthropology. I greatly enjoy the logical thinking processes that are necessary to solve 
+                    computational problems and have a passion for integrating informatics solutions into healthcare applications. Outside of the classroom,
+                    I enjoy reading, watching anime, being active outdoors!
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+    
+        <div class="flip-box4">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img class="flipImageFront" src="images/david.jpg" alt="David photo"  >
+                    <img class="spinArrow" src="images/spinArrow.png" alt="Turn arrow symbol">
+                </div>
+                <button type="button" class="collapsible">
+                    <img class="expand" src="images/expand.png" alt="Expand symbol">
+                </button>
+                <div class="flip-box-back">
+                    <h2> David Fiora</h2>
+                    <p>
+                        Hello, my name is David Fiora and I am a graduate student in the Master of Library and Information Science program at IUPUI, 
+                        specializing in Archival Studies. Prior to coming to IUPUI, I earned a Bachelor of Arts in History with a minor in Political 
+                        Science and an undergraduate certificate in Legal Studies from the University of Cincinnati.  Currently, I work for the Public 
+                        Library of Hamilton County and Cincinnati. I enjoy how I am able to make a difference in peoples’ lives through the work that I do 
+                        as a librarian. This collaboration with Haaga Helia will improve not only my technology skills, but also my project management and 
+                        team work skills inside the library.
+                    </p>
+                </div>
+            </div>
+        </div> 
+
+        <div class="flip-box5">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                     <img class="flipImageFront" src="images/Gabrielle.jpg" alt="Gabirielle photo"  >
+                    <img class="spinArrow" src="images/spinArrow.png" alt="Turn arrow symbol">
+                 </div>
+
+                    <button type="button" class="collapsible">
+                        <img class="expand" src="images/expand.png" alt="Expand symbol">
+                    </button>
+
+                <div class="flip-box-back">
+                        <h2> Gabrielle Baker</h2>
+                        <p>
+                        Hi, I’m Gabrielle, I study Business Information Technology at Haaga-Helia University of Applied Sciences with a core focus and passion on programming and design.  
+                        I moved to Finland from South Africa in December 2020 with my partner.
+                        I have about 7 years of experience working as a hairstylist, gaining a keen eye for detail, design, and beauty, as well as communication skills which I hope to utilize in my new career path of software development. 
+                        I enjoy spending my free time reading, watching sci-fi /fantasy films, or playing fantasy/sci-fi games. When I do venture outdoors on occasion, I enjoy exploring the beautiful nature Finland has to offer.  
+                        </p>
+                </div>
+            </div>
+        </div>         
+                        
+            
         </main>
-
-        <aside>
-            <h2>Aside Goes Here</h2><br>Quintilian declaring Cicero was "not the name of a man, but of eloquence
-            itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary
-            medium capable of expressing abstract and complicated
-        </aside>
-
         <footer>
-            <h2>Footer Goes Here</h2>During the chaotic latter half of the first century BC, marked by civil wars and
-            the dictatorship of Gaius Julius Caesar, Cicero championed a return to the traditional republican
-            government.
-            <p>Thanks to Dr. William Helling of IUPUI and w3schools.com (https://www.w3schools.com/css/css_grid.asp) -- Kasper Valtakari</p>
+            <a href="https://www.haaga-helia.fi/en" target = "_blank" rel = "noopener noreferrer"> <img class="footerimgs" src="images/HHlogo.png" alt="Haaga Helia logo"></a>
+            <a href="https://www.iupui.edu/" target = "_blank" rel = "noopener noreferrer"><img class="footerimgs2" src="images/IUPUI Logo.jpg" alt="IUPUI logo"></a>
         </footer>
 
-    </div><!-- END GRID CONTAINER  -->
-
+    </div>
+    <!--link to script this MUST be at the bottom of the body-->
+    <script src ="scripts/script.js"></script>
 </body>
-
 </html>
