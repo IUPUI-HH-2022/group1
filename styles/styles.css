@@ -18,6 +18,8 @@
     margin: auto;
 }
 
+/* NAVBAR */
+
 nav {
     grid-area: nav;
     background-color: rgb(0, 67, 11);
@@ -62,86 +64,79 @@ nav li {
 /* Dropdown */
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+  position: relative;
+  display: inline-block;
+}
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    /*background color changed by Gabi 17/04*/
-    background-color: rgb(0, 67, 11);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    margin-top: 10px;
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /*background color changed by Gabi 17/04*/
+  background-color: rgb(0, 67, 11);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  margin-top: 10px;
+  z-index: 1;
+}
 
-  .dropMenuItem {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.dropMenuItem {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /*nav ends here*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*nav ends here*/
 
 body{ /*background color changed slightly lighter Gabi 17/04*/
-    background-color: rgb(197, 198, 197);
-    font-family: 'Playfair Display', serif;
-    margin: 0;
+  background-color: rgb(197, 198, 197);
+  font-family: 'Playfair Display', serif;
+  margin: 0;
 }
+
 main {
   grid-area: main;
   background-color: rgb(241, 241, 241);
   border-radius: 25px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  margin-top: 10px;
-  margin: auto;
+  padding: 2% 5%;
+  margin: 10px auto;
   padding-bottom: 50%;
   width: 70%;
 }
 
-header{
+header {
   grid-area: header;
   background-color: rgb(241, 241, 241);
   border-radius: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 5%;
+  padding: 2% 5% 5% 5%;
   margin: auto;
   max-width: 70%;
-  }
+}
 
-h1{
+h1 {
   font-family: 'EB Garamond', serif;
   text-decoration: underline solid 1px black;
-  }
-/*all footer items here*/
+}
+
+/* FOOTER */
 footer {
+  grid-area: footer;
   background-color: rgb(144, 187, 109);
   bottom: 0;
   width: 100%;
   height: auto; /*can change to adapt to content later*/
 }
 
-footer{
-  grid-area: footer;
-
-  }
 .footerimgs{
   max-width: 10%;
 }
 
 .footerimgs2{
-  max-width: 8%;
+  max-width: 10%;
 }
 /*end of footer*/
 
