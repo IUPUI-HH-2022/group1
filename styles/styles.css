@@ -19,6 +19,9 @@
 }
 
 /* NAVBAR */
+ #smallMenu {
+  display: none;
+}
 
 nav {
     grid-area: nav;
@@ -140,5 +143,31 @@ footer {
 }
 /*end of footer*/
 
+/* FIRST MEDIA BREAKPOINT  = tablets */
 
+@media screen and (max-width: 800px) {
+  #mobileMenu {
+    display: none;
+  }
+
+  #smallMenu {
+    display: block;
+    float: right;
+    margin: 10px 20px;
+  }
+
+  #smallMenu button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(0, 67, 11);
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+  }
+
+  #smallMenu button:focus {
+    background-color: rgb(144, 187, 109);
+    border-radius: 15px;
+  }
+}
     

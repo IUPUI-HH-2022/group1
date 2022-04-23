@@ -26,24 +26,27 @@
 <body>
     <div class="grid-container">
         <nav>
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Cyberbullying</a></li>
-                <li>
-                    <div class="dropdown">
-                        <a href="#">Intersectionality</a>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li><a class="dropMenuItem" href="#">Accessibility</a></li>
-                                <li><a class="dropMenuItem" href="#">Women</a></li>
-                                <li><a class="dropMenuItem" href="#">People of color</a></li>
-                                <li><a class="dropMenuItem" href="#">LGBTQIA+</a></li>
-                            </ul>
+            <span id="smallMenu"> <button type="button" onclick="showHideMenu()">Menu &nbsp ☰</button></span>
+            <div id="mobileMenu">
+                <ul id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Cyberbullying</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#">Intersectionality &nbsp ⌵</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a class="dropMenuItem" href="#">Accessibility</a></li>
+                                    <li><a class="dropMenuItem" href="#">Women</a></li>
+                                    <li><a class="dropMenuItem" href="#">People of color</a></li>
+                                    <li><a class="dropMenuItem" href="#">LGBTQIA+</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <header>
