@@ -146,12 +146,23 @@ footer {
   height: auto; /*can change to adapt to content later*/
 }
 
-.footerimgs{
+.footer-schoollogos{
+    float:left;
+    display: block;
+}
+
+img.footer{
   max-width: 10%;
 }
 
-.footerimgs2{
-  max-width: 10%;
+ul.footer{
+    list-style-type:none;
+}
+
+/*Made assuming our website is validated*/
+.footer-validatorlogos{
+    float:right;
+    display:block;
 }
 /*end of footer*/
 
