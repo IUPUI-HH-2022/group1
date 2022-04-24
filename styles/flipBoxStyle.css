@@ -95,6 +95,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     perspective: 1000px;
     margin-inline-start: 13%;
     padding-top: 2%;
+    padding-bottom: 1%;
   }
   
   .flip-box3:hover .flip-box-inner {
