@@ -161,21 +161,22 @@ img.school-logos{
 ul.no-bullets{
     list-style-type:none;
     text-align: center;
-    transform: translate(0,-50%);
-    .list-item {
+    transform: translate(0,-50%);}
+
+.list-item {
         display: inline-block;
         padding-left:4em;
     }
-}
+
 /*Scroll to top*/
 a.scroll{
     text-align:center;
     color:black;
     font-size:18px;
 }
-a.scroll: visited{
+/*a.scroll: visited{
     text-decoration: none;
-}
+}*/
 a.scroll:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -235,6 +236,7 @@ li.validation-space{
     font-size: 20px;
     color: white;
     margin: 10px;
+    cursor: pointer;
   }
 
   #nav li {
@@ -254,5 +256,8 @@ li.validation-space{
     width: 100%;
     margin-top: 0;
   }
+body{
+  margin-top: 10%;
+}
 }
     
