@@ -143,71 +143,65 @@ footer {
   background-color: rgb(144, 187, 109);
   bottom: 0;
   width: 100%;
-  height: 75px; /*can change to adapt to content later*/
+  height: auto; /*can change to adapt to content later*/
 }
-
-/*School logos*/
-div.school-logos{
-    float:left;
+/*HH School Logos*/
+div.HH-logo{
     text-align: left;
-    padding-left:.5em;
+    padding-left:.2em;
+    transform: translate(0, 5px);
 }
-img.school-logos{
-    max-width:12%;
-    height: 50%;
+img.HH-logo{
+    max-width:20%;
+}
+/*IUPUI School Logos*/
+div.IUPUI-logo{
+    text-align:right;
+    padding-right:.2em;
+
+}
+img.IUPUI-logo{
+    max-width:18%;
+    float:right;
+    transform: translate(0, -112px);
+    display: block;
+
+}
+/*School logos together*/
+div.school-logos{
+    display:none;
 }
 
 /*Middle nav links*/
-ul.no-bullets{
+div.footernav{
+    transform: translate(0, -50px);
+}
+ul.footernav{
     list-style-type:none;
     text-align: center;
-    transform: translate(0,-50%);}
-
-.list-item {
-        display: inline-block;
-        padding-left:4em;
-    }
-
-/*Scroll to top*/
+}
+/*scroll to top*/
 a.scroll{
     text-align:center;
     color:black;
-    font-size:18px;
+    font-size:20px;
 }
-/*a.scroll: visited{
+a.scroll: visited{
     text-decoration: none;
-}*/
+}
 a.scroll:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-
 /*About Us and Home links*/
 a.links:link, a.links:visited{
     text-decoration:none;
     color: black;
-    font-size:18px;
+    font-size:20px;
 }
 a.links:hover{
     text-decoration: underline;
     cursor:pointer;
-}
-
-/*Validation Images- Assuming our site will be validated*/
-ul.no-bullets2{
-    list-style-type:none;
-    text-align: right;  
-    padding-right:.5em;
-}
-img.validation{
-    max-width:5%;
-}
-#w3c{
-   max-width:3%;
-}
-
-li.validation-space{
-    padding-left:4em;
 }
 /*end of footer*/
 
@@ -258,6 +252,30 @@ li.validation-space{
   }
 body{
   margin-top: 10%;
+}
+    
+/*list of school logos*/
+div.school-logos{
+    display:block;
+    text-align: center;
+}
+img.school-logos{
+    max-width: 13%;
+}
+ul.school-logos{
+    list-style-type:none;
+}
+/*HH School Logos*/
+div.HH-logo{
+    display: none;
+}
+/*IUPUI School Logos*/
+div.IUPUI-logo{
+    display: none;
+}
+/*Middle Nav links*/
+div.footernav{
+    display:none;
 }
 }
     
