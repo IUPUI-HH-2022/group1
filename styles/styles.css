@@ -156,39 +156,36 @@ footer {
   height: auto; /*can change to adapt to content later*/
 }
 
-footer span {
-  display: inline-block;
-  height: 120px;
-  width: 30%;
-  justify-content: space-between;
+footer div {
+  width: 50%;
+  float: left;
 }
 
 /*HH School Logos*/
-span.HH-logo{
-    text-align: left;
+#logos {
+  display: inline;
 }
 
 img.HH-logo{
-  max-width:70%;
-  float:right;
-  padding: 10px;
+  width: 100%;
 }
 
 /*Footer bar*/
-span.footernav {
-  margin-top: 0px;
-  padding-left: 5%;
+div.footernav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  width: 40%;
+  list-style: none;
 }
 
 /*IUPUI School Logos*/
-span.IUPUI-logo{
-  text-align:right;
-}
-
 img.IUPUI-logo{
-  max-width:70%;
-  float:right;
-  padding: 10px;
+  width:90%;
 }
 
 
@@ -283,7 +280,10 @@ a:hover{
     margin-top: 0;
   }
 
-    
-
 }
-    
+
+/* THIRD MEDIA BREAKPOINT FOR FOOTER*/
+
+@media screen and (max-width: 600px) {
+  
+}
