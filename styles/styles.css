@@ -159,7 +159,7 @@ footer div {
 }
 
 img.HH-logo{
-  max-width: 90%;
+  max-width: 70%;
 }
 
 /*Footer bar*/
@@ -177,7 +177,7 @@ footer ul {
 
 /*IUPUI School Logos*/
 img.IUPUI-logo{
-  max-width: 80%;
+  max-width: 50%;
 }
 
 
@@ -203,6 +203,12 @@ a:hover{
  nav ul li {
    margin-right: 10px;
  }
+ img.HH-logo{
+  max-width: 90%;
+}
+img.IUPUI-logo{
+  max-width: 80%;
+}
 }
 
 /* SECOND MEDIA BREAKPOINT  = tablets */
@@ -271,7 +277,13 @@ a:hover{
     width: 100%;
     margin-top: 0;
   }
-
+  
+  img.HH-logo{
+    max-width: 100%;
+  }
+  img.IUPUI-logo{
+    max-width: 100%;
+  }
 }
 
 /* THIRD MEDIA BREAKPOINT FOR FOOTER*/
@@ -287,5 +299,8 @@ a:hover{
 
   .textLink {
     display: block;
+  }
+  body{
+    margin-top: 15%;
   }
 }
