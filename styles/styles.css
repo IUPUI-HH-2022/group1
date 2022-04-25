@@ -109,7 +109,9 @@ nav label, #hamburger {
 
 body{ /*background color changed slightly lighter Gabi 17/04*/
   background-color: rgb(200, 210, 217);
-  font-family: 'Playfair Display', serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*font-family: 'Playfair Display', serif;
+  font-weight: bold;*/
   margin: 0;
 }
 
@@ -134,7 +136,6 @@ header {
 
 h1 {
   font-family: 'EB Garamond', serif;
-  text-decoration: underline solid 1px black;
 }
 
 /* FOOTER */
@@ -148,8 +149,7 @@ footer {
 /*HH School Logos*/
 div.HH-logo{
     text-align: left;
-    padding-left:.2em;
-    transform: translate(0, 5px);
+    padding-left:2em;
 }
 img.HH-logo{
     max-width:20%;
@@ -157,7 +157,7 @@ img.HH-logo{
 /*IUPUI School Logos*/
 div.IUPUI-logo{
     text-align:right;
-    padding-right:.2em;
+    padding-right:2em;
 
 }
 img.IUPUI-logo{
@@ -168,16 +168,15 @@ img.IUPUI-logo{
 
 }
 /*School logos together*/
-div.school-logos{
+/*div.school-logos{
     display:none;
 }
 
-/*Middle nav links*/
+/*Middle nav links
 div.footernav{
     transform: translate(0, -50px);
-}
-ul.footernav{
-    list-style-type:none;
+}*/
+.footernav{
     text-align: center;
 }
 /*scroll to top*/
@@ -194,12 +193,12 @@ a.scroll:hover{
     cursor: pointer;
 }
 /*About Us and Home links*/
-a.links:link, a.links:visited{
+a:link, a:visited{
     text-decoration:none;
     color: black;
     font-size:20px;
 }
-a.links:hover{
+a:hover{
     text-decoration: underline;
     cursor:pointer;
 }
