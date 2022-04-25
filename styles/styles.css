@@ -146,52 +146,43 @@ footer {
   width: 100%;
   height: auto; /*can change to adapt to content later*/
 }
+
+footer span {
+  display: inline-block;
+  height: 120px;
+  width: 30%;
+  justify-content: space-between;
+}
+
 /*HH School Logos*/
-div.HH-logo{
+span.HH-logo{
     text-align: left;
-    padding-left:2em;
 }
+
 img.HH-logo{
-    max-width:20%;
+  max-width:70%;
+  float:right;
+  padding: 10px;
 }
+
+/*Footer bar*/
+span.footernav {
+  margin-top: 0px;
+  padding-left: 5%;
+}
+
 /*IUPUI School Logos*/
-div.IUPUI-logo{
-    text-align:right;
-    padding-right:2em;
-
+span.IUPUI-logo{
+  text-align:right;
 }
+
 img.IUPUI-logo{
-    max-width:18%;
-    float:right;
-    transform: translate(0, -112px);
-    display: block;
-
-}
-/*School logos together*/
-/*div.school-logos{
-    display:none;
+  max-width:70%;
+  float:right;
+  padding: 10px;
 }
 
-/*Middle nav links
-div.footernav{
-    transform: translate(0, -50px);
-}*/
-.footernav{
-    text-align: center;
-}
-/*scroll to top*/
-a.scroll{
-    text-align:center;
-    color:black;
-    font-size:20px;
-}
-a.scroll:visited{
-    text-decoration: none;
-}
-a.scroll:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 /*About Us and Home links*/
 a:link, a:visited{
     text-decoration:none;
@@ -207,7 +198,11 @@ a:hover{
 /* FIRST MEDIA BREAKPOINT  = tablets */
 
 @media screen and (max-width: 800px) {
-   #responsiveMenu a {
+  body{
+    margin-top: 10%;
+  }
+  
+  #responsiveMenu a {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -249,32 +244,8 @@ a:hover{
     width: 100%;
     margin-top: 0;
   }
-body{
-  margin-top: 10%;
-}
+
     
-/*list of school logos*/
-div.school-logos{
-    display:block;
-    text-align: center;
-}
-img.school-logos{
-    max-width: 13%;
-}
-ul.school-logos{
-    list-style-type:none;
-}
-/*HH School Logos*/
-div.HH-logo{
-    display: none;
-}
-/*IUPUI School Logos*/
-div.IUPUI-logo{
-    display: none;
-}
-/*Middle Nav links*/
-div.footernav{
-    display:none;
-}
+
 }
     
