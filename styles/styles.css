@@ -161,13 +161,17 @@ footer div {
   float: left;
 }
 
+.textLink {
+  display: none;
+}
+
 /*HH School Logos*/
 #logos {
   display: inline;
 }
 
 img.HH-logo{
-  width: 100%;
+  max-width: 90%;
 }
 
 /*Footer bar*/
@@ -185,7 +189,7 @@ footer ul {
 
 /*IUPUI School Logos*/
 img.IUPUI-logo{
-  width:90%;
+  max-width: 80%;
 }
 
 
@@ -285,5 +289,15 @@ a:hover{
 /* THIRD MEDIA BREAKPOINT FOR FOOTER*/
 
 @media screen and (max-width: 600px) {
-  
+  .HH-logo {
+    display: none;
+  }
+
+  .IUPUI-logo {
+    display: none;
+  }
+
+  .textLink {
+    display: block;
+  }
 }
