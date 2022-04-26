@@ -48,7 +48,7 @@ blockquote{
 }
 
 @media screen and (max-width: 800px) {
-  aside{ width: 70%;
+  aside{ width: 100%;
   padding-left: 0;
   margin-left: 0;
   float: none;
