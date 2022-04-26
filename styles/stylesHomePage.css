@@ -144,30 +144,7 @@ blockquote{
   font-size:10pt;
   text-decoration: underline;
 }
-.flipboxHeader1{
-  margin-top: 5%;
-  margin-inline-start: 18%;
-  margin-bottom: -5%;
-}
-.flipboxHeader2{
-  margin-inline-start: 65%;
-  margin-top: -5%;
-}
-.flipboxHeader3{
-  margin-inline-start: 20%;
-  margin-top: -2%;
-  margin-bottom: -2%;
-}
-.flipboxHeader4{
-  margin-inline-start: 65%;
-  margin-top: -6%;
-  margin-bottom: 4%;
-}
-.flipboxHeader5{
-  margin-inline-start: 20%;
-  margin-top: -4%;
-  margin-bottom: -0.2%;
-}
+
 /* FOOTER */
 footer {
   grid-area: footer;

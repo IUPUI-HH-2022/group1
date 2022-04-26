@@ -4,6 +4,9 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   /*flip around boxes*/
   /*spin arrow /expand icon + switching paragraphs based on viewport*/
   /*spin arrow icon*/
+  .flipboxHeader1{
+  text-align: center;
+}
   .spinArrow{
     max-width: 10%;
     position: static;
@@ -44,6 +47,8 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     background-color: transparent;
     color: black;
     max-width: 80%;
+    width: 500px;
+    height: 500px;
   }
   /*this is only the back*/ 
   .flip-box-back {
@@ -98,7 +103,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   .flip-box3:hover .flip-box-inner {
     transform: rotateY(180deg);
-    padding-bottom: 90%;
+    padding-bottom: 79%;
   }
   
   .flip-box4 {
@@ -107,7 +112,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
       perspective: 1000px;
       margin-inline-start: 60%;
       padding-bottom: 30%;
-      margin-top: -4%;
+      margin-top: -3%;
   }
   
   .flip-box4:hover .flip-box-inner {
@@ -175,11 +180,12 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     }
     
     .flip-box-back {
-      background-color: rgb(144, 187, 109);
+      background-color: rgb(180, 180, 180);
       color: rgb(0, 0, 0);
       padding-left: 5%;
       padding-right: 5%;
       border-radius: 15px;
+      width: 100%;
       display: none;
     }
     
@@ -196,7 +202,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     width: 30%;
     perspective: 1000px;
     margin-inline-start: 60%;
-    
+    padding-top: 0.5%;
   }
   
   .flip-box3 {
@@ -208,6 +214,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     clear: both;
     padding-top: 2%;
   }
+  
   
   .flip-box4 {
       background-color: transparent;
@@ -231,8 +238,10 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
 /*end of flip arounds*/
 
 /*SECOND BREAK POINT === mobile */
-@media only screen and (max-width : 650px) {   
-        
+@media only screen and (max-width : 800px) {   
+   h1{
+     text-align: center;
+   }     
   /*flip around boxes*/
   .flipImageFront{
     max-width: 50%;
@@ -259,7 +268,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     margin-inline-start: 10%;
     float: none;
     }
-
+    
     .flip-box2 {
         width: 85%;
         padding-bottom: 5%;
