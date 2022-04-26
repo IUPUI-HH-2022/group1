@@ -47,5 +47,10 @@ blockquote{
   text-decoration: underline;
 }
 
-
+@media screen and (max-width: 800px) {
+  {aside width: 70%;
+  padding-left: 0;
+  margin-left: 0;
+  float: none;
+    background-color: lightgray; }
 
