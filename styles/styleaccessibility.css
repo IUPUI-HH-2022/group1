@@ -1,6 +1,6 @@
 
 .img{
-  max-width: 70%;
+  max-width: 75%;
   margin-inline-start: 15%;
 }
 .imageCitations{
@@ -62,4 +62,11 @@ blockquote{
   float: center;
   background-color: lightgray; }
 
-  }
+.img{
+  max-width: 100%;
+  margin-inline-start: 0%;
+}
+.imageCitations{
+  margin-inline-start: 5%;
+  clear: both;
+  }}
