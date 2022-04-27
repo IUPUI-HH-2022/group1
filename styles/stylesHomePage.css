@@ -3,6 +3,10 @@ main when they flip*/
 main {
   padding-bottom: 30%;
 }
+main a{
+  color: black;
+  text-decoration: none;
+}
 
 /*flip box styling*/
 
