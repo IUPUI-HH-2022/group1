@@ -8,23 +8,7 @@
   clear: both;
 }
 
-body{ /*background color changed slightly lighter Gabi 17/04*/
-  background-color: rgb(200, 210, 217);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*font-family: 'Playfair Display', serif;
-  font-weight: bold;*/
-  margin: 0;
-}
 
-main {
-  grid-area: main;
-  background-color: rgb(241, 241, 241);
-  border-radius: 25px;
-  padding: 2% 5%;
-  margin: 10px auto;
-  padding-bottom: 50%;
-  width: 70%;
-}
 aside {
   width: 30%;
   padding-left: 15px;
@@ -32,21 +16,8 @@ aside {
   float: right;
   background-color: lightgray;
 }
-header {
-  grid-area: header;
-  background-color: rgb(241, 241, 241);
-  border-radius: 15px;
-  padding: 2% 5% 5% 5%;
-  margin: auto;
-  max-width: 70%;
-}
 
-h1 {
-  font-family: 'EB Garamond', serif;
-}
-h2{
-  font-family: 'EB Garamond', serif;
-}
+
 blockquote{
   font-size:10pt;
 }
