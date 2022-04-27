@@ -1,4 +1,12 @@
 
+.img{
+  max-width: 70%;
+  margin-inline-start: 15%;
+}
+.imageCitations{
+  margin-inline-start: 40%;
+  clear: both;
+}
 
 body{ /*background color changed slightly lighter Gabi 17/04*/
   background-color: rgb(200, 210, 217);
