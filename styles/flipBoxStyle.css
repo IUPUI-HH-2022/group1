@@ -1,6 +1,9 @@
 /*media view used to only enable hover on desktop view -please remember that any styling you do here MUST be done to the next breakpoint as well or it will not show on smaller viewports. this is unfortunately how it needs to be done
 to have boxes that spin on desktop view but can be clicked on a smaller viewport*/
 @media only screen and (min-width : 1200px) {
+  main{
+    padding-bottom: 50%;
+  }
   /*flip around boxes*/
   /*spin arrow /expand icon + switching paragraphs based on viewport*/
   /*spin arrow icon*/

@@ -1,351 +1,43 @@
-/* NAVBAR */
-
-nav {
-    grid-area: nav;
-    background-color: rgb(0, 67, 11);
-    display: block;
-    /*position: sticky;*/ 
-    /*when sticky or fixed is on the boxes and the nav have issues with overlapping, 
-    boxes must have absolute position or else they don't flip over correctly- we need to resolve this Gabi 20/04*/
-    top: 0;
-    width: 100%;
-    height: 80px;
-    
-}
-
-.mobileItem {
-  display: none;
-}
-
-#homelink {
-  width: 5%;
-  float: left;
-  margin-left: 10px;
-}
-
-#logo {
-  height: 65px;
-  border-radius: 50%;
-  display:inline-block;
-  padding-left: 10px;
-  padding-top: 8px;
-}
-
-nav ul {
-    text-align: right;
-    margin: 10px;
-    margin-top: 10px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 40px;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 20px;
-    /*font-family: 'Playfair Display', serif;  */ 
-}
-
-#nav a {
-    text-decoration: none;
-    /*text color changed by Gabi 17/04*/
-    color: rgb(255, 255, 255);
-    padding: 10px;
-}
-
-#nav a:hover {
-    /*hover color changed by Gabi 17/04*/
-    background-color: rgb(144, 187, 109);
-    border-radius: 15px;
-}
-
-#responsiveMenu a {
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-nav label, #hamburger {
-  display: none;
-}
-
-/* Dropdown */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-  
-.dropdown-content {
-  display: none;
-  position: absolute;
-  /*background color changed by Gabi 17/04*/
-  background-color: rgb(0, 67, 11);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  margin-top: 8px;
-  z-index: 1;
-}
-
-.dropMenuItem {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-  
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content:hover {
-  display: block;
-}
-
-
-/*nav ends here*/
-
-body{ /*background color changed slightly lighter Gabi 17/04*/
-  background-color: rgb(200, 210, 217);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*font-family: 'Playfair Display', serif;
-  font-weight: bold;*/
-  margin: 0;
-}
-
+/*due to absolute positioning of boxes, a padding in the main is needed to ensure the boxes dont expand past the 
+main when they flip*/
 main {
-  grid-area: main;
-  background-color: rgb(241, 241, 241);
-  border-radius: 25px;
-  padding: 2% 5%;
-  margin: 10px auto;
   padding-bottom: 30%;
-  width: 70%;
 }
 
-header {
-  grid-area: header;
-  background-color: rgb(241, 241, 241);
-  border-radius: 15px;
-  padding: 2% 5% 5% 5%;
-  margin: auto;
-  max-width: 70%;
-}
+/*flip box styling*/
 
-h1 {
-  font-family: 'EB Garamond', serif;
-}
-h2{
-  font-family: 'EB Garamond', serif;
-}
-blockquote{
-  font-size:10pt;
-}
-.citations{
-  font-size:10pt;
-  text-decoration: underline;
-  clear: both;
-}
-
-/* FOOTER */
-footer {
-  grid-area: footer;
-  background-color: rgb(144, 187, 109);
-  bottom: 0;
-  width: 100%;
-  height: auto; /*can change to adapt to content later*/
-}
-
-footer div {
-  width: 50%;
-  float: left;
-}
-
-.textLink {
-  display: none;
-}
-
-/*HH School Logos*/
-#logos {
-  display: inline;
-}
-
-img.HH-logo{
-  max-width: 70%;
-}
-
-/*Footer bar*/
-div.footernav {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer ul {
-  width: 40%;
-  list-style: none;
-}
-
-/*IUPUI School Logos*/
-img.IUPUI-logo{
-  max-width: 50%;
-}
-
-
-/*About Us and Home links*/
-a.footerlinks:link, a.footerlinks:visited{
-    text-decoration:none;
-    color: black;
-    font-size:20px;
-}
-a.footerlinks:hover{
-    text-decoration: underline;
-    cursor:pointer;
-}
-/*end of footer*/
-
-/* FIRST MEDIA BREAKPOINT navbar break*/
-
-@media screen and (max-width: 1000px) {
-  nav ul {
-   padding-left: 0;
- }
-
- nav ul li {
-   margin-right: 10px;
- }
- img.HH-logo{
-  max-width: 90%;
-}
-img.IUPUI-logo{
-  max-width: 80%;
-}
-}
-
-/* SECOND MEDIA BREAKPOINT  = tablets */
-
-@media screen and (max-width: 800px) {
-  body{
-    margin-top: 10%;
-  }
-
-  #homelink {
-    display: none;
-  }
-  
-  #responsiveMenu a {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
- nav {
-   position: absolute;
-   top: 0;
- }
-
- nav ul {
-   text-align: left;
-   padding-left: 0;
- }
-
-  nav label {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    margin: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-
-  nav ul {
-    margin-top: 10px;
-  }
-
-  #nav li {
-    margin: 0;
-  }
-
-  #responsiveMenu {
-    display: none;
-  }
-
-  .dropdown {
-    display: none;
-  }
-
-  .mobileItem {
-    display: block;
-  }
-
-  nav input:checked ~ #responsiveMenu {
-    display: block;
-    background-color: rgb(0, 67, 11);
-  }
-
-  .dropdown-content {
-    width: 100%;
-    margin-top: 0;
-  }
-  
-  img.HH-logo{
-    max-width: 100%;
-  }
-  img.IUPUI-logo{
-    max-width: 100%;
-  }
-}
-
-/* THIRD MEDIA BREAKPOINT FOR FOOTER*/
-
-@media screen and (max-width: 600px) {
-  .HH-logo {
-    display: none;
-  }
-
-  .IUPUI-logo {
-    display: none;
-  }
-
-  .textLink {
-    display: block;
-  }
-  body{
-    margin-top: 15%;
-  }
-}
-/*this is the flip box section for the home page only*/
-/*media view used to only enable hover on desktop view -please remember that any styling you do here MUST be done to the next breakpoint as well or it will not show on smaller viewports. this is unfortunately how it needs to be done
-to have boxes that spin on desktop view but can be clicked on a smaller viewport*/
+/*desktopview*/
 @media only screen and (min-width : 1200px) {
   /*flip around boxes*/
-  /*spin arrow /expand icon + switching paragraphs based on viewport*/
-  /*spin arrow icon*/
+  /*spin arrow /expand icons based on viewport*/
+
+/*text ontop of boxes*/
   .flipboxHeader1{
   text-align: center;
 }
+/*spin arrow icon*/
   .spinArrow{
     max-width: 10%;
     position: static;
   }
-  
-  /*expand icon*/
+/*expand icon*/
   .expand{
     display: none;
   }
-  /*collapsible is the button to expand*/
+/*collapsible is the button clicked to expand bios*/
   .collapsible{
     border:0ch;
   }
   /*end of icon + buttons*/
   
   /*flip image styling applicable to all boxes*/
+
   /*this is the image on the front*/
   .flipImageFront{
     max-width: 100%;
     border-radius: 10%;
-    }        
+    }   
+
    /*this is the front and back*/       
   .flip-box-inner {
     width: 100%;
@@ -354,12 +46,14 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
+
   /*this is the front and back*/
   .flip-box-front, .flip-box-back {
     position:absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
   /*this is only the front*/        
   .flip-box-front {
     background-color: transparent;
@@ -368,6 +62,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     width: 200pt;
     height: 200pt;
   }
+
   /*this is only the back*/ 
   .flip-box-back {
     background-color: rgb(180, 180, 180);
@@ -387,6 +82,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   /*areas of flipboxes that require individual styling due to absolute positioning - absolute position is required
   otherwise the front and back cant overlap and spin to reveal one another, but rather take individual space*/
+
   /*flip box one on left of site*/
   .flip-box {
     background-color: transparent;
@@ -398,7 +94,6 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   /*spin code*/
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-    
   }
   
   .flip-box2 {
@@ -458,10 +153,12 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
 
   /*FIRST BREAK POINT === tablet */
 @media only screen and (max-width : 1200px) {
-    
+    main{
+      padding-bottom: 10%;
+    }
     /*flip around boxes all code for boxes must be here regardless of if it is in the above section
     above boxes section is in a media view and will not be displayed here*/
-  
+
     /*arrow and expand icons and button start*/
     .spinArrow{
       max-width: 10%;
@@ -617,32 +314,5 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     perspective: 1000px;
     margin-inline-start: 10%;
     }
-}
-/*code for women page*/
-.womenimg{
-  max-width: 70%;
-  margin-inline-start: 15%;
-}
-.imageCitations{
-  margin-inline-start: 40%;
-  clear: both;
-}
-
-.womenimg2{
-  max-width: 35%;
-  float: left;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-}
-.womenimg3{
-  max-width: 35%;
-  float: right;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  margin-right: 10%;
-}
-p{
-  clear: both;
 }
 
