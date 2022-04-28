@@ -55,7 +55,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   }
   /*this is only the back*/ 
   .flip-box-back {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(200, 210, 217);
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
     padding-left: 5%;
@@ -183,7 +183,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     }
     
     .flip-box-back {
-      background-color: rgb(180, 180, 180);
+      background-color: rgb(200, 210, 217);
       color: rgb(0, 0, 0);
       padding-left: 5%;
       padding-right: 5%;
@@ -253,7 +253,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
         
   
   .flip-box-back {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(200, 210, 217);
     color: rgb(0, 0, 0);
     padding-left: 2%;
     padding-right: 2%;
