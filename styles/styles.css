@@ -188,6 +188,11 @@ img.IUPUI-logo{
   max-width: 50%;
 }
 
+/* References style wrap */
+.referencesList li a {
+  overflow-wrap: break-word;
+}
+
 
 /*About Us and Home links*/
 a.footerlinks:link, a.footerlinks:visited{
