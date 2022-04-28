@@ -25,14 +25,7 @@
 p{
   clear: both;
 }
-table, td {
-  border: 1px solid black;
-  text-align: center;
-}
-td{
-  padding: 5%;
-  max-width: 10%;
-}
+
 .tweet{
 max-width: 100%;
 position: relative;
@@ -62,7 +55,7 @@ margin-right: auto;
 
 /*code for women intersectionality page*/
 @media screen and (max-width: 800px) {
-  .twitter-tweet{
+.twitter-tweet{
     max-width: 80%;
     margin:auto;
   } 
