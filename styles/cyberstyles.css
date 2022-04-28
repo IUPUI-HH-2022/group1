@@ -10,4 +10,5 @@
     border: solid 1px black;
     width: 40%;
     margin-left: 10px;
+    max-width: 430px;
 }
