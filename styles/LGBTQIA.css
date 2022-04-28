@@ -1,0 +1,36 @@
+/*.lgbtqimg and .imgCitations are the same as 
+styleaccessibility.css and stylesWomen.css*/
+.lgbtqimg{
+  max-width: 70%;
+  margin-inline-start: 15%;
+}
+
+.imgCitations{
+  margin-inline-start: 40%;
+  clear: both;
+}
+/*q is only new style added for pull quote*/
+q{
+    font-weight: 300;
+    font-size: 25pt;
+    line-height: 1.3em;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+sub.q{
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .lgbtqimg{
+      max-width: 100%;
+      margin-inline-start: 0%;
+        }
+    .imgCitations{
+      margin-inline-start: 5%;
+      clear:both;
+    }
+}
