@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Group 1- Teryn Morgan, Giulia Libe, Gabrielle Baker, Christina Friesen, David Fiora">
+    <meta name="description" content="People of Color">
+    <meta name="keywords" content="iupui, hh, people of color, poc, bipoc">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>People of Color</title>
+    <!--link to styles-->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="./styles/maingrid.css" rel="stylesheet" type="text/css">
+    
+    <!--font for headers-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav>
+            <label for="hamburger">Menu &nbsp &#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <span id="homelink"><a href="index.html"><img id="logo" src="./images/logo.png" alt="homepage logo"></a></span>
+            <div id="responsiveMenu">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="#">Cyberbullying</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown">
+                            <a href="#">Intersectionality &nbsp ⌵</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a class="dropMenuItem" href="#">Accessibility</a></li>
+                                    <li><a class="dropMenuItem" href="intersectionalityWomen.html">Women</a></li>
+                                    <li><a class="dropMenuItem" href="#">People of color</a></li>
+                                    <li><a class="dropMenuItem" href="#">LGBTQIA+</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobileItem"><a href="#">Accessibility</a></li>
+                    <li class="mobileItem"><a href="intersectionalityWomen.html">Women</a></li>
+                    <li class="mobileItem"><a href="#">People of color</a></li>
+                    <li class="mobileItem"><a href="#">LGBTQIA+</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <main> 
+       <h1>Representation in Video Games for People of Color</h1> 
+       <img class="pocimg" src="images/POCPageHeader.png" alt="Diverse hands with game controller">
+       <blockquote><a class="imgCitations" href="https://diamondlobby.com/geeky-stuff/diversity-in-gaming/" target = "_blank" rel = "noopener noreferrer">Image credit: Lin, 2021 </a></blockquote>
+       <p>
+       Video games are a multi-billion-dollar, global industry played by people of varying nationalities, races, backgrounds, and languages. According to a Pew Research Center study, there is a similar amount of gaming self-reported among white, Black, and Hispanic Americans [2]. However, such diversity of players has not been historically represented within the games themselves [4]. In a 2021 survey of the 93 most popular games released in the preceding five years, over 60% of the characters were white, with all other racial groups making up less than 40% [8]. Additionally, there were almost 10% of games featuring only playable white characters , with no non-white representation at all [8]. This sharply underscores the wide disparity between video game players and the racial representation within video games themselves.
+       </p>
+       <p>
+       As with all mediums of popular entertainment, the evolution of video games has included changes in the ways Black, Indigenous, and People of Color (BIPOC) are represented. Not only does misrepresentation or lack of representation of People of Color (POC) within video games exclude a significant portion of the gaming community, but it also perpetuates negative perceptions of such groups, furthering negative attitudes against BIPOC groups, dehumanizing them and promoting discrimination.
+       </p>
+       <br>
+       <img class="pocimg" src="images/WhiteCharactersGraphic.png" alt="White characters outnumber other ethnicities in video games">
+       <blockquote><a class="imgCitations" href="https://diamondlobby.com/geeky-stuff/diversity-in-gaming/" target = "_blank" rel = "noopener noreferrer">Image credit: Lin, 2021 </a></blockquote>
+       <h2>Common BIPOC Representation Issues</h2>
+       <ul>
+        <li>Lack of diverse racial representation within avatar or character options, including options for skin tone, hair types and styles, clothing options, and proper lighting for brown and black skin tones that allow for such characters to be seen clearly [9].</li>
+        <li>Damaging, stereotypical portrayals of entire racial or ethnic groups, such as Latinx gang members and drug dealers, hypersexualized and submissive Asian women, or Muslim terrorists [4].</li>
+        <li>Cultural appropriation of all types, including misuse of traditional or religious symbols, clothing, tattoos, hairstyles, and icons from underrepresented groups [3].</li>
+        <li>Inaccurate presentations of cultures or geographic areas, including Pakistanis speaking Arabic, instead of Urdu and English, or Middle Eastern cities all shown as dilapidated deserts, rather than modern and vibrant, as many actually are [7].</li>
+        <li>“Other”-ism or the regular portrayal of non-white characters as antagonists, faceless masses to be attacked or killed, or simply secondary/supporting characters that are one-dimensional and expendable <sub><a href="https://www.pbs.org/independentlens/blog/leveling-up-representation-depictions-of-people-of-color-in-video-games/" target = "_blank" rel = "noopener noreferrer">[4]</a></sub>.</li> 
+        <li>Whiteness as the default setting and virtuous, with darkness equating to evil, alien, or villainous <sub><a href="https://scholarcommons.sc.edu/senior_theses/163" target = "_blank" rel = "noopener noreferrer">[6]</a></sub>.</li>
+       </ul>
+       <p>
+       Whether it’s overtly racist portrayals of entire ethnic groups as violent criminals or the microaggressions of gamers not being able to create self-representative characters, all such representation issues create problematic gaming environments [4]. These issues are particularly damaging when they appear in AAA, massive, blockbuster games, that further promote such negative stereotypes through their popularity and widespread usage. 
+       </p>
+       <p>
+       Further, continued and recurrent underrepresentation of POC within the video gaming community denotes undervaluing of POC gamers both in the virtual world and the real world, creating increased distance between the games and the players they rely upon [6]. Although some game developers may cite ongoing game popularity as evidence of POC representation being a non-issue, there is increasingly loud demand for improved diversity within the gaming community and these voices will only get louder. 
+       </p>
+       <h2>Representation Improvements in the Industry</h>
+       <p>
+       Given the enormity of the gaming industry, changes to such prevalent issues cannot happen overnight, but increasing awareness and discussion of these problems is necessary for promoting change. While BIPOC representation has certainly improved since the first Black character appeared in a fighting game in 1976, there is still much room for improvement [4]. Developers must acknowledge that religions or races are not monocultures, and a wide array of nationalities, languages, and cultures are encompassed in the broad labels of Asian, Black, Indigenous, Latinx, and Muslim. 
+       </p>
+       <p>
+       Since many of these changes must come from game developers, it is incumbent upon them to increase their awareness of these needs and deliver improvements by conducting thorough research and using contributing voices from the represented communities within the games. Per the International Game Developers Association (IGDA) 2019 worldwide survey, an overwhelming majority (over 80%) of game developers were white [10]. As such, it is unsurprising that this lack of representation is reflected in the games they create. However, more can and should be done to better represent the many racial communities that are represented in the gamers who play these games. In addition to increasing representation within the games, increasing the diversity of game developers will go a long way to improving BIPOC representation as well [4]. 
+       </p>
+       Although racial diversity within gaming should be an ethical goal to provide communities of inclusion, safety, and welcome for all gamers, perhaps the most immediate way to get results would be to show game developing executives the financial and business impacts such representation can have for the industry. Looking at the global popularity and significant earnings of such major box office successes as the 2018 Black Panther and Crazy Rich Asians movies, it’s apparent that not only does inclusion result in financial success, but it can also draw in new users who might not otherwise be interested in the gaming world [10]. 
+       </p>
+       <p>
+       Similarly, gamers themselves can exercise their influence by demanding representative games that truly reflect themselves in accurate and respectful ways, rather than simple stereotypes or not at all. Given the billions of gamers who immerse themselves in video games each year, the potential for positive influence of increased diversity cannot be understated [10]. Through such efforts, perhaps one day the gaming community will be able to achieve a utopia where diverse representation is so embraced as to be default within the industry and games truly reflect the people who play them. 
+       </p>
+       
+        
+        
+        <!-- INSERT CONTENT HERE -->
+        
+
+
+    </main>
+    <footer>
+        <div id="logos">
+            <ul>
+                <li class='HH-logo'>
+                    <a href="https://www.haaga-helia.fi/en" target = "_blank" rel = "noopener noreferrer">
+                    <img class="HH-logo" src="images/HHlogo.png" alt="Haaga Helia logo"></a>    
+                </li>
+                <li class="IUPUI-logo">
+                    <a href="https://www.iupui.edu/" target = "_blank" rel = "noopener noreferrer">
+                    <img class="IUPUI-logo" src="images/IUPUI.png" alt="IUPUI logo"></a>
+                </li>
+                <li class="textLink"><a href="https://www.haaga-helia.fi/en" target = "_blank" rel = "noopener noreferrer">HH</a></li>
+                <li class="textLink"><a href="https://www.iupui.edu/" target = "_blank" rel = "noopener noreferrer">IUPUI</a></li>
+            </ul>
+        </div>
+        <div class='footernav'>
+            <a class="footerlinks" href="#" onClick="window.scrollTo(0, 0)">Top</a>&nbsp | &nbsp
+            <a class="footerlinks" href="index.html">Home</a>&nbsp | &nbsp
+            <a class="footerlinks" href="aboutUs.html">About Us</a>
+        </div>
+    </footer> 
+</div>
+</body>
+</html>
