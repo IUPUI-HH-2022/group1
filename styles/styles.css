@@ -189,8 +189,9 @@ img.IUPUI-logo{
 }
 
 /* References style wrap */
-.referencesList li a {
-  overflow-wrap: break-word;
+.referencesList {
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 
