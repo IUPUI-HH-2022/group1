@@ -9,6 +9,15 @@ styleaccessibility.css and stylesWomen.css*/
   margin-inline-start: 40%;
   clear: both;
 }
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  background-color: lightgray;
+}
+
 /*q is only new style added for pull quote*/
 q{
     font-weight: 300;
