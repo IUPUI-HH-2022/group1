@@ -127,7 +127,7 @@ header {
   border-radius: 15px;
   padding: 2% 5% 5% 5%;
   margin: auto;
-  max-width: 70%;
+  width: 70%;
 }
 
 h1 {
@@ -305,14 +305,19 @@ img.IUPUI-logo{
 @media screen and (max-width: 600px) {
   
   body{
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   main {
   /* set to 90 instead of 100% because something with grid goes wrong otherwise */
     width: 90%;
+    border-radius: 0%;
   }
-
+  header{
+    width: 90%;
+    border-radius: 0%;
+    margin: 0%, 0%, 0%, 0%;
+  }
   /*Footer resize and logos to text links*/
   .HH-logo {
     display: none;
