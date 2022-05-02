@@ -300,12 +300,17 @@ img.IUPUI-logo{
   }
 }
 
-/* THIRD MEDIA BREAKPOINT FOR FOOTER*/
+/* THIRD MEDIA BREAKPOINT Mobile */
 
 @media screen and (max-width: 600px) {
   
   body{
     margin-top: 15%;
+  }
+
+  main {
+  /* set to 90 instead of 100% because something with grid goes wrong otherwise */
+    width: 90%;
   }
 
   /*Footer resize and logos to text links*/
