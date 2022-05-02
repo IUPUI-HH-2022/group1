@@ -30,7 +30,7 @@ blockquote{
   aside{ width: 100%;
   padding-left: 0;
   margin-left: 0;
-  float: center;
+  /*float: center;*/
   background-color: lightgray; }
 
 .img{
