@@ -13,6 +13,9 @@ styleaccessibility.css and stylesWomen.css*/
 aside {
   width: 30%;
   padding-left: 15px;
+  /*right and bottom padding added by Gabi to center text and provide same padding all round*/
+  padding-right: 15px;
+  padding-bottom: 15PX;
   margin-left: 15px;
   float: right;
   background-color: lightgray;
@@ -32,14 +35,27 @@ sub.q{
     font-size: 10pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*this breakpoint added by Gabi 02/05/2022 to allow images to be larger for tablet view*/
+@media screen and (max-width: 1000px){ 
+  .pocimg{
+    max-width: 100%;
+    margin-inline-start: 0%;
+      }
+      /*added by Gabi 02/05/2022 to allow aside to center on screen*/
+    aside{
+      float: none;
+      width: 90%;
+    }
+} 
 @media screen and (max-width: 800px) {
-    .pocimg{
+  /*no need for this as it now starts at a larger screen size*/
+   /*.pocimg{
       max-width: 100%;
       margin-inline-start: 0%;
-        }
+        }*/
     .imgCitations{
       margin-inline-start: 5%;
       clear:both;
     }
+    
 }
