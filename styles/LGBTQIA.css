@@ -24,10 +24,16 @@ sub.q{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-<!-- Change breakpoint to max-width: 1000px, per stylesWomen.css and poc.css (i.e., per Gabi), CF 02/05? -->
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .lgbtqimg{
       max-width: 100%;
+      margin-inline-start: 0%;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .lgbtqimg{
+      max-width: 80%;
       margin-inline-start: 0%;
         }
     .imgCitations{
