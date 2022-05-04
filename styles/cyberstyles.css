@@ -11,10 +11,8 @@
 
 #pewGraph {
     float: right;
-    width: 40%;
-    min-width: 400px;
+    max-width: 70%;
     margin-left: 10px;
-    max-width: 430px;
 }
 
 aside {
@@ -29,12 +27,13 @@ aside {
     aside {
         float: none;
         width: 90%;
+        margin-left: 0;
     }
 
     #pewGraph {
-        display: block;
+        float: none;
         width: 100%;
-        margin-left: 0 !important; 
+        margin-left: 5%;
     }
 }
 

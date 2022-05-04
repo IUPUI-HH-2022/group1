@@ -54,9 +54,15 @@ sub.q{
       max-width: 100%;
       margin-inline-start: 0%;
         }*/
-    .imgCitations{
-      margin-inline-start: 5%;
-      clear:both;
-    }
+
+  /*remove the margin left for smaller screens added by Giulia*/
+  aside {
+    margin-left: 0;
+  }
+
+  .imgCitations{
+    margin-inline-start: 5%;
+    clear:both;
+  }
     
 }
