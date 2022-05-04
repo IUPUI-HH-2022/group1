@@ -4,6 +4,12 @@
   max-width: 70%;
   margin-inline-start: 15%;
 }
+.womenimghead{
+  max-width: 100%;
+  margin-inline-start: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 .imageCitations{
   margin-inline-start: 40%;
   clear: both;
@@ -62,6 +68,10 @@ margin-right: auto;
 
   @media screen and (max-width: 1000px) {
     .womenimg{
+      max-width: 100%;
+      margin-inline-start: 0%;
+    }
+    .womenimghead{
       max-width: 100%;
       margin-inline-start: 0%;
     }
