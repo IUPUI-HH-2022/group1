@@ -107,8 +107,6 @@ nav label, #hamburger {
 body{ /*background color changed slightly lighter Gabi 17/04*/
   background-color: rgb(200, 210, 217);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*font-family: 'Playfair Display', serif;
-  font-weight: bold;*/
   margin: 0;
 }
 
@@ -136,6 +134,13 @@ h1 {
 h2{
   font-family: 'EB Garamond', serif;
   font-size: 30px;
+}
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #000000;
+ padding-left: 2%;
+ padding-right: 2%;
 }
 blockquote{
   font-size:10pt;
