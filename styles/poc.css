@@ -12,10 +12,11 @@ styleaccessibility.css and stylesWomen.css*/
 
 aside {
   width: 30%;
-  padding-left: 15px;
-  /*right and bottom padding added by Gabi to center text and provide same padding all round*/
+  /* If padding or margin have the same measurements on all sides no need to specify left bottom right etc */
+  padding: 15px;
+  /*right and bottom padding added by Gabi to center text and provide same padding all round
   padding-right: 15px;
-  padding-bottom: 15PX;
+  padding-bottom: 15PX;*/
   margin-left: 15px;
   float: right;
   background-color: lightgray;
