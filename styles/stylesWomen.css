@@ -22,8 +22,15 @@
   margin-bottom: 5%;
   margin-right: 10%;
 }
+
 p{
   clear: both;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+  font-size: 18px;
+  color: #000000;
+ padding-left: 2%;
+ padding-right: 2%;
 }
 
 .tweet{
