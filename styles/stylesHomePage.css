@@ -269,9 +269,7 @@ main a{
 
 /*SECOND BREAK POINT === mobile */
 @media only screen and (max-width : 900px) {   
-   h1{
-     text-align: center;
-   }     
+      
   /*flip around boxes*/
   .flipImageFront{
     max-width: 50%;

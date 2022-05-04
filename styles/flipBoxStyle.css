@@ -247,9 +247,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
 
 /*SECOND BREAK POINT === mobile */
 @media only screen and (max-width : 800px) {   
-   h1{
-     text-align: center;
-   }     
+      
   /*flip around boxes*/
   .flipImageFront{
     max-width: 50%;
