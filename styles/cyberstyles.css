@@ -1,13 +1,16 @@
 /* Cyberbulling images styles */
 
-#cyberTitleImg {
+.cyberImg {
     width: 100%;
     margin: 10px auto;
 }
 
+.imgBorder {
+    border: solid 1px black;
+}
+
 #pewGraph {
     float: right;
-    border: solid 1px black;
     width: 40%;
     margin-left: 10px;
     max-width: 430px;
