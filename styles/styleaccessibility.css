@@ -19,9 +19,10 @@ aside {
   margin-left: 15px;
   float: right;
   background-color: lightgray;
+  
 }
 
-
+/* not necessary as it exists in styles which you have linked Gabi
 blockquote{
   font-size:10pt;
 }
@@ -29,20 +30,22 @@ blockquote{
   font-size:10pt;
   text-decoration: underline;
 }
-
-/* break point added for images to be larger in tablet view
-@media screen and (max-width: 1000px){ 
+*/
+/*break point added for images to be larger in tablet view from 1300 is necessary to avoid awkward break in the aside and image 
+not sure who initially added this breakpoint, I just enlarged it Gabi*/
+@media screen and (max-width: 1300px){ 
 .img{
     max-width: 100%;
     margin-inline-start: 0%;
       }
-*allows aside to be centered sooner so there's not a weird gap as the screen size decreases
+/*allows aside to be centered sooner so there's not a weird gap as the screen size decreases*/
     aside{
       float: none;
       width: 90%;
+      clear: both;
     }
 }
-*/
+
 @media screen and (max-width: 800px) {
   /*this not necessary as starts at 1000px*/
   aside{ 
