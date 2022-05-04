@@ -23,6 +23,9 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   .collapsible{
     border:0ch;
   }
+  .flipboxHeader1{
+    font-size: 25px;
+  }
   /*end of icon + buttons*/
   
   /*flip image styling applicable to all boxes*/
@@ -78,12 +81,12 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   /*spin code*/
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-    margin-bottom: 105%;
+    margin-bottom: 150%;
   }
   
   .flip-box2 {
     background-color: transparent;
-    max-width: 30%;
+    max-width: 29%;
     perspective: 1000px;
     margin-inline-start: 60%;
     padding-bottom: 30%;
@@ -92,7 +95,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   .flip-box2:hover .flip-box-inner {
     transform: rotateY(180deg);
-    padding-bottom: 105%;
+    padding-bottom: 150%;
   }
   
   .flip-box3 {
@@ -100,22 +103,22 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     max-width: 30%;
     perspective: 1000px;
     margin-inline-start: 13%;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 5%;
+    margin-bottom: 5%;
   }
   
   .flip-box3:hover .flip-box-inner {
     transform: rotateY(180deg);
-    padding-bottom: 79%;
+    padding-bottom: 150%;
   }
   
   .flip-box4 {
       background-color: transparent;
-      max-width: 30%;
+      max-width: 29%;
       perspective: 1000px;
       margin-inline-start: 60%;
       padding-bottom: 30%;
-      margin-top: -3%;
+      margin-top: -7%;
   }
   
   .flip-box4:hover .flip-box-inner {
@@ -131,7 +134,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   .flip-box5:hover .flip-box-inner {
     transform: rotateY(180deg);
-    margin-bottom: 10%;
+    margin-bottom: 80%;
   }
 }
   /*end of flip arounds*/
@@ -144,7 +147,9 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
     
     /*flip around boxes all code for boxes must be here regardless of if it is in the above section
     above boxes section is in a media view and will not be displayed here*/
-  
+    .flipboxHeader1{
+      font-size: 23px;
+    }
     /*arrow and expand icons and button start*/
     .spinArrow{
       max-width: 10%;
@@ -202,10 +207,10 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   .flip-box2 {
     background-color: transparent;
-    width: 30%;
+    width: 29%;
     perspective: 1000px;
     margin-inline-start: 60%;
-    padding-top: 0.5%;
+    padding-top: 0.1%;
   }
   
   .flip-box3 {
@@ -221,7 +226,7 @@ to have boxes that spin on desktop view but can be clicked on a smaller viewport
   
   .flip-box4 {
       background-color: transparent;
-      width: 30%;
+      width: 29%;
       perspective: 1000px;
       margin-inline-start: 60%;
       padding-top: 2%;
