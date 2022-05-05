@@ -9,6 +9,7 @@ styleaccessibility.css and stylesWomen.css*/
   margin-inline-start: 40%;
   clear: both;
 }
+
 /*q is only new style added for pull quote*/
 q{
     font-weight: 300;
@@ -24,20 +25,31 @@ sub.q{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Unordered list style suggestion for consistency*/
+/*Since you have a <ul> item as well you can add the class="listInterline" and it will style the list items as the list I did - Giulia*/
+/*
+.listInterline li {
+  margin-bottom: 0.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+*/
+
+
 @media screen and (max-width: 1000px) {
     .lgbtqimg{
       max-width: 100%;
-      margin-inline-start: 0%;
+      margin-inline-start: 2%;
     }
   }
 
 @media screen and (max-width: 800px) {
     .lgbtqimg{
       max-width: 80%;
-      margin-inline-start: 0%;
+      margin-inline-start: 2%;
         }
     .imgCitations{
-      margin-inline-start: 5%;
+      margin-inline-start: 4%;
       clear:both;
     }
 }

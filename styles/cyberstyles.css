@@ -1,4 +1,9 @@
 /* Cyberbulling images styles */
+.listInterline li {
+    margin-bottom: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
 
 .cyberImg {
     width: 100%;
@@ -33,10 +38,14 @@ aside {
     #pewGraph {
         float: none;
         width: 100%;
-        margin-left: 5%;
+        min-width: 350px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 800px) {
+    #pewGraph {
+        min-width: none;
+        width: 90%;
+        margin-left: 0;
+    }
 }
