@@ -199,6 +199,10 @@ img.IUPUI-logo{
   word-break: break-all;
 }
 
+.referencesList li {
+  margin-bottom: 0.5em;
+}
+
 
 /*About Us and Home links*/
 a.footerlinks:link, a.footerlinks:visited{
