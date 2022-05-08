@@ -166,6 +166,11 @@ footer div {
   display: none;
 }
 
+#footerLinks {
+  width: 60%;
+  padding-top: 5px;
+}
+
 /*HH School Logos*/
 #logos {
   display: inline;
@@ -180,7 +185,7 @@ div.footernav {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 footer ul {
@@ -226,12 +231,19 @@ a.footerlinks:hover{
  nav ul li {
    margin-right: 10px;
  }
+
  img.HH-logo{
   max-width: 90%;
-}
-img.IUPUI-logo{
-  max-width: 80%;
-}
+  }
+
+  img.IUPUI-logo{
+    max-width: 80%;
+  }
+
+  #footerLinks {
+    width: 90% !important;
+    padding-top: 5px;
+  }
 }
 
 /* SECOND MEDIA BREAKPOINT  = tablets */
@@ -304,8 +316,14 @@ img.IUPUI-logo{
   img.HH-logo{
     max-width: 100%;
   }
+
   img.IUPUI-logo{
     max-width: 100%;
+  }
+
+  #footerLinks {
+    width: 90% !important;
+    padding-top: 5px;
   }
 }
 
@@ -350,6 +368,15 @@ img.IUPUI-logo{
 
   a.footerlinks {
    font-size: 15px !important;
- }
+  }
+
+  #footerLinks {
+    width: 90% !important;
+    padding-top: 5px;
+  }
+
+  #footerLinks p {
+    font-size: 15px !important;
+  }
 
 }
