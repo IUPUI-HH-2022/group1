@@ -75,7 +75,6 @@ nav label, #hamburger {
 .dropdown-content {
   display: none;
   position: absolute;
-  /*background color changed by Gabi 17/04*/
   background-color: rgb(0, 67, 11);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -154,7 +153,7 @@ footer {
   background-color: rgb(144, 187, 109);
   bottom: 0;
   width: 100%;
-  height: auto; /*can change to adapt to content later*/
+  height: auto; 
 }
 
 footer div {
